@@ -1,0 +1,33 @@
+module deco_jmp(input [1:0] JmpE, input [2:0] Fun3E, input N, Z, C, V, output PCJmpE, PCJalRE);
+
+parameter DESACTIVAR = 2'b00;
+parameter BRANCH = 2'b01;
+parameter JAL = 2'b10;
+parameter JALR = 2'b11;
+
+parameter BRANCH_EQUAL = 3'b000;
+parameter BRANCH_NOT_EQUAL = 3'b001;
+parameter BRANCH_LESS_THAN = 3'b100;
+parameter BRANCH_GREATER_EQUAL = 3'b101;
+parameter BRANCH_LESS_THAN_UNSIGNED = 3'b110;
+parameter BRANCH_GREATER_EQUAL_UNSIGNED = 3'b111;
+
+reg branch;
+
+always_comb
+	begin
+		case(Fun3E)
+			BRANCH_EQUAL : branch <= Z;
+			BRANCH_NOT_EQUAL : branch <= ~Z;
+			BRANCH_LESS_THAN : branch <= (N ^ V);
+			BRANCH_GREATER_EQUAL : branch <= ~(N ^ V);
+			BRANCH_LESS_THAN_UNSIGNED : branch <= ~C; // recordar que el carry es opuesto al borrow cuando se usa sumador
+			BRANCH_GREATER_EQUAL_UNSIGNED : branch <= C;
+			default : branch <= 0;
+		endcase
+	end
+
+assign PCJmpE = ((JmpE == BRANCH) & branch) | JmpE[1];
+assign PCJalRE = JmpE == JALR;
+
+endmodule

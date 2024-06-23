@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/rv32/simulation/qsim
+vtop
+!s110 1718649226
+!i10b 1
+!s100 ODEObgXhB?T7YVfRz8k<U3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVDzY`S?lBBKN1Jd3iM=jL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1718649223
+8top.vo
+Ftop.vo
+!i122 36
+L0 32 229412
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1718649225.000000
+!s107 top.vo|
+!s90 -work|work|top.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vtop_vlg_vec_tst
+!s110 1718649227
+!i10b 1
+!s100 VN_>MJzaEl[f_N:7b58EP3
+R1
+I1hNdngSD>hZ=HHG:aFFFV3
+R2
+R0
+w1718649220
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 37
+L0 30 73
+R3
+r1
+!s85 0
+31
+!s108 1718649227.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

@@ -1,0 +1,31 @@
+module pipereg_MW(input clk, reset,
+                input [31:0] ALUResultM, ReadDataM, PCPlus4M,
+                input [4:0] RdM,
+                output reg [31:0] ALUResultW, ReadDataW, PCPlus4W,
+                output reg [4:0] RdW);
+					 
+    reg limpiando;
+
+    always @(negedge clk) begin 
+        if (~reset)
+        begin
+            ALUResultW <= 0;
+            ReadDataW <= 0;
+            PCPlus4W <= 0;
+            RdW <= 0;
+            limpiando <= 1;
+        end
+        else if (limpiando)
+            limpiando <= 0;
+
+        else 
+        begin
+            ALUResultW <= ALUResultM;
+            ReadDataW <= ReadDataM;
+            PCPlus4W <= PCPlus4M;      
+            RdW <= RdM;
+        end
+        
+    end
+
+endmodule

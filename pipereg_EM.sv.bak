@@ -1,0 +1,33 @@
+module pipereg_EM(input clk, reset,
+                input [31:0] ALUResultE, WriteDataE, PCPlus4E,
+                input [4:0] RdE,
+                output reg [31:0] ALUResultM, WriteDataM, PCPlus4M,
+                output reg [4:0] RdM);
+					 
+    reg limpiando;
+
+    always @(negedge clk) begin 
+        if (~reset)
+        begin
+            ALUResultM <= 0;
+            WriteDataM <= 0;
+            RdM <= 0; 
+            PCPlus4M <= 0;
+            limpiando <= 1;
+        end
+
+        else if(limpiando)
+            limpiando <= 0;
+
+        else
+        begin
+            ALUResultM <= ALUResultE;
+            WriteDataM <= WriteDataE;
+            RdM <= RdE; 
+            PCPlus4M <= PCPlus4E;        
+        end
+        
+    end
+
+endmodule
+

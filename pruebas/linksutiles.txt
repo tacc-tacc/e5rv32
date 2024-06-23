@@ -1,0 +1,4 @@
+https://sourceware.org/binutils/docs/as/index.html#SEC_Contents  para ver las macros del assembly
+https://github.com/riscv-non-isa/riscv-asm-manual/blob/main/riscv-asm.md  algunas cosas del estándar
+https://marz.utk.edu/my-courses/cosc230/book/example-risc-v-assembly-programs/  algunos programas de ejemplo
+https://riscvasm.lucasteske.dev/#  compilar

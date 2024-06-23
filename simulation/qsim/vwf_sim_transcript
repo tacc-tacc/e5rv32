@@ -1,0 +1,315 @@
+Determining the location of the ModelSim executable...
+
+Using: C:/intelFPGA/20.1/modelsim_ase/win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off rv32 -c top --vector_source="D:/rv32/Waveform.vwf" --testbench_file="D:/rv32/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+    Info: Copyright (C) 2023  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Jun 17 15:33:38 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off rv32 -c top --vector_source=D:/rv32/Waveform.vwf --testbench_file=D:/rv32/simulation/qsim/Waveform.vwf.vt
+Info (119004): Automatically selected device EP4CGX50DF27C6 for design top
+Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+
+
+ring output pin "b[26]" in vector source file when writing test bench files
+
+en writing test bench files
+
+adDataM[8]" in vector source file when writing test bench files
+
+ files
+
+st bench files
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/rv32/simulation/qsim/" rv32 -c top
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+    Info: Copyright (C) 2023  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Jun 17 15:33:41 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/rv32/simulation/qsim/ rv32 -c top
+Info (119004): Automatically selected device EP4CGX50DF27C6 for design top
+Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file top.vo in folder "D:/rv32/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Mon Jun 17 15:33:43 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+D:/rv32/simulation/qsim/rv32.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/intelFPGA/20.1/modelsim_ase/win32aloem/vsim -c -do rv32.do
+
+Reading pref.tcl
+
+
+# 2020.1
+
+
+# do rv32.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+# Start time: 15:33:45 on Jun 17,2024
+# vlog -work work top.vo 
+
+# -- Compiling module top
+
+# 
+# Top level modules:
+# 	top
+
+# End time: 15:33:47 on Jun 17,2024, Elapsed time: 0:00:02
+
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+# Start time: 15:33:47 on Jun 17,2024
+# vlog -work work Waveform.vwf.vt 
+
+# -- Compiling module top_vlg_vec_tst
+
+# 
+
+# Top level modules:
+# 	top_vlg_vec_tst
+
+# End time: 15:33:47 on Jun 17,2024, Elapsed time: 0:00:00
+
+# Errors: 0, Warnings: 0
+
+# vsim -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.top_vlg_vec_tst 
+# Start time: 15:33:47 on Jun 17,2024
+# Loading work.top_vlg_vec_tst
+# Loading work.top
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneiv_ver.cycloneiv_ram_block
+# Loading cycloneiv_ver.cycloneiv_ram_register
+# Loading cycloneiv_ver.cycloneiv_ram_pulse_generator
+# Loading cycloneiv_ver.cycloneiv_mac_mult
+# Loading cycloneiv_ver.cycloneiv_mac_data_reg
+# Loading cycloneiv_ver.cycloneiv_mac_sign_reg
+# Loading cycloneiv_ver.cycloneiv_mac_mult_internal
+# Loading cycloneiv_ver.cycloneiv_mac_out
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 30072 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+
+# after#25
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# ** Note: $finish    : Waveform.vwf.vt(85)
+#    Time: 1 us  Iteration: 0  Instance: /top_vlg_vec_tst
+
+# End time: 15:33:58 on Jun 17,2024, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading D:/rv32/Waveform.vwf...
+
+Reading D:/rv32/simulation/qsim/rv32.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: ALUResultM[31] - signal not found in VCD.
+
+Warning: ALUResultM[30] - signal not found in VCD.
+
+Warning: ALUResultM[29] - signal not found in VCD.
+
+Warning: ALUResultM[28] - signal not found in VCD.
+
+Warning: ALUResultM[27] - signal not found in VCD.
+
+Warning: ALUResultM[26] - signal not found in VCD.
+
+Warning: ALUResultM[25] - signal not found in VCD.
+
+Warning: ALUResultM[24] - signal not found in VCD.
+
+Warning: ALUResultM[23] - signal not found in VCD.
+
+Warning: ALUResultM[22] - signal not found in VCD.
+
+Warning: ALUResultM[21] - signal not found in VCD.
+
+Warning: ALUResultM[20] - signal not found in VCD.
+
+Warning: ALUResultM[19] - signal not found in VCD.
+
+Warning: ALUResultM[18] - signal not found in VCD.
+
+Warning: ALUResultM[17] - signal not found in VCD.
+
+Warning: ALUResultM[16] - signal not found in VCD.
+
+Warning: ALUResultM[15] - signal not found in VCD.
+
+Warning: ALUResultM[14] - signal not found in VCD.
+
+Warning: ALUResultM[13] - signal not found in VCD.
+
+Warning: ALUResultM[12] - signal not found in VCD.
+
+Warning: ALUResultM[11] - signal not found in VCD.
+
+Warning: ALUResultM[10] - signal not found in VCD.
+
+Warning: ALUResultM[9] - signal not found in VCD.
+
+Warning: ALUResultM[8] - signal not found in VCD.
+
+Warning: ALUResultM[7] - signal not found in VCD.
+
+Warning: ALUResultM[6] - signal not found in VCD.
+
+Warning: ALUResultM[5] - signal not found in VCD.
+
+Warning: ALUResultM[4] - signal not found in VCD.
+
+Warning: ALUResultM[3] - signal not found in VCD.
+
+Warning: ALUResultM[2] - signal not found in VCD.
+
+Warning: ALUResultM[1] - signal not found in VCD.
+
+Warning: ALUResultM[0] - signal not found in VCD.
+
+Warning: FPUResultE[31] - signal not found in VCD.
+
+Warning: FPUResultE[30] - signal not found in VCD.
+
+Warning: FPUResultE[29] - signal not found in VCD.
+
+Warning: FPUResultE[28] - signal not found in VCD.
+
+Warning: FPUResultE[27] - signal not found in VCD.
+
+Warning: FPUResultE[26] - signal not found in VCD.
+
+Warning: FPUResultE[25] - signal not found in VCD.
+
+Warning: FPUResultE[24] - signal not found in VCD.
+
+Warning: FPUResultE[23] - signal not found in VCD.
+
+Warning: FPUResultE[22] - signal not found in VCD.
+
+Warning: FPUResultE[21] - signal not found in VCD.
+
+Warning: FPUResultE[20] - signal not found in VCD.
+
+Warning: FPUResultE[19] - signal not found in VCD.
+
+Warning: FPUResultE[18] - signal not found in VCD.
+
+Warning: FPUResultE[17] - signal not found in VCD.
+
+Warning: FPUResultE[16] - signal not found in VCD.
+
+Warning: FPUResultE[15] - signal not found in VCD.
+
+Warning: FPUResultE[14] - signal not found in VCD.
+
+Warning: FPUResultE[13] - signal not found in VCD.
+
+Warning: FPUResultE[12] - signal not found in VCD.
+
+Warning: FPUResultE[11] - signal not found in VCD.
+
+Warning: FPUResultE[10] - signal not found in VCD.
+
+Warning: FPUResultE[9] - signal not found in VCD.
+
+Warning: FPUResultE[8] - signal not found in VCD.
+
+Warning: FPUResultE[7] - signal not found in VCD.
+
+Warning: FPUResultE[6] - signal not found in VCD.
+
+Warning: FPUResultE[5] - signal not found in VCD.
+
+Warning: FPUResultE[4] - signal not found in VCD.
+
+Warning: FPUResultE[3] - signal not found in VCD.
+
+Warning: FPUResultE[2] - signal not found in VCD.
+
+Warning: FPUResultE[1] - signal not found in VCD.
+
+Warning: FPUResultE[0] - signal not found in VCD.
+
+Writing the resulting VWF to D:/rv32/simulation/qsim/rv32_20240617153359.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

@@ -1,0 +1,130 @@
+Flow report for top
+Mon Jun 17 15:33:43 2024
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Flow Summary                                                                        ;
++------------------------------------+------------------------------------------------+
+; Flow Status                        ; Successful - Mon Jun 17 15:33:43 2024          ;
+; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
+; Revision Name                      ; top                                            ;
+; Top-level Entity Name              ; top                                            ;
+; Family                             ; Cyclone IV GX                                  ;
+; Total logic elements               ; 11,073                                         ;
+;     Total combinational functions  ; 10,069                                         ;
+;     Dedicated logic registers      ; 1,579                                          ;
+; Total registers                    ; 1579                                           ;
+; Total pins                         ; 265                                            ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 524,288                                        ;
+; Embedded Multiplier 9-bit elements ; 37                                             ;
+; Total GXB Receiver Channel PCS     ; 0                                              ;
+; Total GXB Receiver Channel PMA     ; 0                                              ;
+; Total GXB Transmitter Channel PCS  ; 0                                              ;
+; Total GXB Transmitter Channel PMA  ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/17/2024 15:29:31 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; top                 ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 46424953154357.171864897114680         ; --            ; --          ; --         ;
+; MISC_FILE                           ; ram2p.bsf                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ram2p_bb.v                             ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
+; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001  ; --          ; --         ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --            ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 4938 MB             ; 00:00:35                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4733 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4760 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4741 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4760 MB             ; 00:00:02                           ;
+; Total                ; 00:00:53     ; --                      ; --                  ; 00:00:41                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; tac              ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; tac              ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; tac              ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; tac              ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; tac              ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off rv32 -c top
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off rv32 -c top --vector_source=D:/rv32/Waveform.vwf --testbench_file=D:/rv32/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/rv32/simulation/qsim/ rv32 -c top
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off rv32 -c top --vector_source=D:/rv32/Waveform.vwf --testbench_file=D:/rv32/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/rv32/simulation/qsim/ rv32 -c top
+
+
+
