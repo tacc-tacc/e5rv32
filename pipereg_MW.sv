@@ -6,7 +6,7 @@ module pipereg_MW(input clk, reset,
 					 
     reg limpiando;
 
-    always @(negedge clk) begin 
+    always_ff @(negedge clk, negedge reset) begin 
         if (~reset)
         begin
             ResultW <= 0;

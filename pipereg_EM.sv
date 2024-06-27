@@ -1,16 +1,16 @@
 module pipereg_EM(input clk, reset,
-                input [31:0] ResultE, ReadDataE,
+                input [31:0] ResultE, ADDRTargetE,
                 input [4:0] RdE,
-                output reg [31:0] ResultM, ReadDataM,
+                output reg [31:0] ResultM, ADDRTargetM,
                 output reg [4:0] RdM);
 					 
     reg limpiando;
 
-    always @(negedge clk) begin 
+    always_ff @(negedge clk, negedge reset) begin 
         if (~reset)
         begin
             ResultM <= 0;
-            ReadDataM <= 0;
+            ADDRTargetM <= 0;
             RdM <= 0;
             limpiando <= 1;
         end
@@ -21,7 +21,7 @@ module pipereg_EM(input clk, reset,
         else
         begin
             ResultM <= ResultE;
-            ReadDataM <= ReadDataE;
+            ADDRTargetM <= ADDRTargetE;
             RdM <= RdE;   
         end
         

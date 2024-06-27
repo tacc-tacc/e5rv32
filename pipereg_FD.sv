@@ -4,14 +4,21 @@ module pipereg_FD(input clk, reset, clear, dis,
 
     reg limpiando;
 
-    always @(negedge clk)
+    always_ff @(negedge clk, negedge reset)
     begin
-        if (~reset | (~dis & clear))
+        if (~reset)
         begin
-        InstrD <= 0;
-        PCPlus4D <= 0;
-        limpiando <= 1;
+			  InstrD <= 0;
+			  PCPlus4D <= 0;
+			  limpiando <= 1;
         end
+		  
+		  else if(~dis & clear)
+		  begin
+			  InstrD <= 0;
+			  PCPlus4D <= 0;
+			  limpiando <= 1;		  
+		  end
         
         else if (limpiando)
         limpiando <= 0;

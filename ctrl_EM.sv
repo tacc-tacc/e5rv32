@@ -1,16 +1,17 @@
 module ctrl_EM (input clk, reset,
-                input [1:0] ResultSrcE, 
-                input RegWriteE, MemWriteE,
-                output reg [1:0] ResultSrcM,
-                output reg RegWriteM, MemWriteM);
+                input ResultSrcE, 
+                input RegWriteE, FRegWriteE, MemWriteE,
+                output reg ResultSrcM,
+                output reg RegWriteM, FRegWriteM, MemWriteM);
 
 	reg limpiando;
-    always @(negedge clk, negedge reset)
+    always_ff @(negedge clk, negedge reset)
     begin
         if (~reset)
         begin
             ResultSrcM <= 0;
             RegWriteM <= 0;
+            FRegWriteM <= 0;
             MemWriteM <= 0;
 			limpiando <= 1;
         end
@@ -20,6 +21,7 @@ module ctrl_EM (input clk, reset,
         begin
             ResultSrcM <= ResultSrcE; 
             RegWriteM <= RegWriteE;
+            FRegWriteM <= FRegWriteE;
             MemWriteM <= MemWriteE;
         end
         

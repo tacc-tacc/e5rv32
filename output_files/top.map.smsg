@@ -1,5 +1,6 @@
-Warning (10268): Verilog HDL information at pipereg_DE.sv(11): always construct contains both blocking and non-blocking assignments File: D:/rv32/pipereg_DE.sv Line: 11
-Warning (10273): Verilog HDL warning at immbuilder.sv(11): extended using "x" or "z" File: D:/rv32/immbuilder.sv Line: 11
-Info (10281): Verilog HDL Declaration information at deco_jmp.sv(4): object "BRANCH" differs only in case from object "branch" in the same scope File: D:/rv32/deco_jmp.sv Line: 4
-Warning (10273): Verilog HDL warning at alu.sv(55): extended using "x" or "z" File: D:/rv32/alu.sv Line: 55
-Warning (10273): Verilog HDL warning at alu.sv(69): extended using "x" or "z" File: D:/rv32/alu.sv Line: 69
+Warning (10268): Verilog HDL information at fpu.sv(309): always construct contains both blocking and non-blocking assignments File: D:/e5rv32/fpu.sv Line: 309
+Warning (10268): Verilog HDL information at pipereg_DE.sv(11): always construct contains both blocking and non-blocking assignments File: D:/e5rv32/pipereg_DE.sv Line: 11
+Warning (10273): Verilog HDL warning at immbuilder.sv(11): extended using "x" or "z" File: D:/e5rv32/immbuilder.sv Line: 11
+Info (10281): Verilog HDL Declaration information at deco_jmp.sv(4): object "BRANCH" differs only in case from object "branch" in the same scope File: D:/e5rv32/deco_jmp.sv Line: 4
+Warning (10273): Verilog HDL warning at alu.sv(55): extended using "x" or "z" File: D:/e5rv32/alu.sv Line: 55
+Warning (10273): Verilog HDL warning at alu.sv(69): extended using "x" or "z" File: D:/e5rv32/alu.sv Line: 69

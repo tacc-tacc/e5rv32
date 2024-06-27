@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/17/2024 15:33:39"
+// Generated on "06/27/2024 00:37:21"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          top
 // 
@@ -34,55 +34,61 @@ reg clk;
 reg reset;
 // wires                                               
 wire [31:0] a;
-wire [4:0] ALUControlE;
-wire [31:0] ALUResultE;
+wire [31:0] ADDRTargetE;
+wire [1:0] ALUSrcBE;
 wire [31:0] b;
 wire FlushD;
 wire FlushE;
 wire [1:0] ForwardAE;
 wire [1:0] ForwardBE;
-wire FPUOkE;
+wire [31:0] FPUResultE;
+wire FRegWriteW;
+wire [31:0] InstrD;
 wire [31:0] InstrF;
+wire [1:0] JmpE;
 wire [31:0] PC;
-wire [4:0] RdE;
+wire PCJmpE;
 wire [4:0] RdM;
 wire [4:0] RdW;
 wire [31:0] ReadDataM;
-wire [4:0] Rs1E;
-wire [4:0] Rs2E;
+wire RegWriteW;
+wire [31:0] ResultE;
 wire StallD;
 wire StallF;
-wire [31:0] WriteDataM;
+wire zero;
 
 // assign statements (if any)                          
 top i1 (
 // port map - connection between master ports and signals/registers   
 	.a(a),
-	.ALUControlE(ALUControlE),
-	.ALUResultE(ALUResultE),
+	.ADDRTargetE(ADDRTargetE),
+	.ALUSrcBE(ALUSrcBE),
 	.b(b),
 	.clk(clk),
 	.FlushD(FlushD),
 	.FlushE(FlushE),
 	.ForwardAE(ForwardAE),
 	.ForwardBE(ForwardBE),
-	.FPUOkE(FPUOkE),
+	.FPUResultE(FPUResultE),
+	.FRegWriteW(FRegWriteW),
+	.InstrD(InstrD),
 	.InstrF(InstrF),
+	.JmpE(JmpE),
 	.PC(PC),
-	.RdE(RdE),
+	.PCJmpE(PCJmpE),
 	.RdM(RdM),
 	.RdW(RdW),
 	.ReadDataM(ReadDataM),
+	.RegWriteW(RegWriteW),
 	.reset(reset),
-	.Rs1E(Rs1E),
-	.Rs2E(Rs2E),
+	.ResultE(ResultE),
 	.StallD(StallD),
 	.StallF(StallF),
-	.WriteDataM(WriteDataM)
+	.zero(zero)
 );
 initial 
 begin 
-#1000000 $finish;
+#200000 $finish;
 end 
 
 // clk
@@ -96,8 +102,9 @@ end
 // reset
 initial
 begin
-	reset = 1'b0;
-	reset = #50000 1'b1;
+	reset = 1'b1;
+	reset = #20000 1'b0;
+	reset = #30000 1'b1;
 end 
 endmodule
 

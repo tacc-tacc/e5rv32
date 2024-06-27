@@ -124,27 +124,41 @@ module fpu
    logic [C_CMD-1:0]      OP_SP;
    logic [C_OP-1:0]       Operand_a_DP;
    logic [C_OP-1:0]       Operand_b_DP;
-   logic                  Enable_SP;
+   logic                  Enable_SP, prev_Enable_SP;
+	logic							Start_SP;
 
-   always @(posedge Clk_CI)
+   always_ff @(posedge Clk_CI, negedge Rst_RBI)
      begin
         if (~Rst_RBI) begin
            Operand_a_DP   <= '0;
            Operand_b_DP   <= '0;
            OP_SP          <= '0;
            RM_SP          <= '0;
-           Enable_SP      <= '1;
+           Enable_SP      <= '0;
+           prev_Enable_SP      <= '0;
         end
         else begin
            Operand_a_DP   <= Operand_a_DI;
            Operand_b_DP   <= Operand_b_DI;
            OP_SP          <= OP_SI;
            RM_SP          <= RM_SI;
+			  if (~Enable_SI)
+					begin
+					Start_SP <= 0;
+					prev_Enable_SP <= 0;
+					end
+			  else if (~prev_Enable_SP)
+					begin
+					Start_SP <= 1;
+					prev_Enable_SP <= 1;
+					end
+			  else			  
+					Start_SP <= 0;
            Enable_SP      <= Enable_SI;
         end
      end
 
-   assign Valid_SO = Enable_SP;
+   assign Valid_SO = (((OP_SP == C_FPU_DIV_CMD || OP_SP == C_FPU_SQRT_CMD) && Div_OK) || (OP_SP != C_FPU_DIV_CMD && OP_SP != C_FPU_SQRT_CMD));
 
    /////////////////////////////////////////////////////////////////////////////
    // Disassemble operands
@@ -207,6 +221,31 @@ module fpu
       .Exp_prenorm_DO  ( Exp_prenorm_mult_D  ),
       .Mant_prenorm_DO ( Mant_prenorm_mult_D )
       );
+		
+	/////////////////////////////////////////////////////////////////////////////
+   // Divider
+   /////////////////////////////////////////////////////////////////////////////
+   logic                            Sign_prenorm_div_D;
+	logic [31:0] Div_Result_D;
+   logic                            Enable_Div_S, Enable_Sqrt_S, Div_OK;
+
+   assign Enable_Div_S =  Enable_SP & (OP_SP == C_FPU_DIV_CMD);
+	assign Enable_Sqrt_S =  Enable_SP & (OP_SP == C_FPU_SQRT_CMD);
+	
+	fpu_div divider
+		(
+			.Clk_CI (Clk_CI),
+			.Rst_RBI (Rst_RBI),
+			.Div_start_SI (Enable_Div_S & Start_SP),
+			.Sqrt_start_SI (Enable_Sqrt_S & Start_SP),
+			.Operand_a_DI (Operand_a_DP),
+			.Operand_b_DI (Operand_b_DP),
+			.RM_SI (RM_SP),
+			.Precision_ctl_SI(5'b10111),
+			
+			.Result_DO ( Div_Result_D ),
+			.Done_SO (Div_OK)
+		);
 
    /////////////////////////////////////////////////////////////////////////////
    // Integer to floating point conversion
@@ -273,27 +312,41 @@ module fpu
         case (OP_SP)
           C_FPU_ADD_CMD, C_FPU_SUB_CMD:
             begin
-               Sign_norm_D = Sign_prenorm_add_D;
-               Exp_prenorm_D = Exp_prenorm_add_D;
-               Mant_prenorm_D = Mant_prenorm_add_D;
+               Sign_norm_D <= Sign_prenorm_add_D;
+               Exp_prenorm_D <= Exp_prenorm_add_D;
+               Mant_prenorm_D <= Mant_prenorm_add_D;
             end
           C_FPU_MUL_CMD:
             begin
-               Sign_norm_D = Sign_prenorm_mult_D;
-               Exp_prenorm_D = Exp_prenorm_mult_D;
-               Mant_prenorm_D = Mant_prenorm_mult_D;
+               Sign_norm_D <= Sign_prenorm_mult_D;
+               Exp_prenorm_D <= Exp_prenorm_mult_D;
+               Mant_prenorm_D <= Mant_prenorm_mult_D;
             end
+				/*
+			C_FPU_DIV_CMD:
+				begin
+               Sign_norm_D <= Sign_prenorm_div_D;
+               Exp_prenorm_D <= Exp_prenorm_div_D;
+               Mant_prenorm_D <= Mant_prenorm_div_D;				
+				end
+			C_FPU_SQRT_CMD:
+				begin
+               Sign_norm_D <= Sign_prenorm_div_D;
+               Exp_prenorm_D <= Exp_prenorm_div_D;
+               Mant_prenorm_D <= Mant_prenorm_div_D;				
+				end
+				*/
           C_FPU_I2F_CMD:
             begin
-               Sign_norm_D = Sign_prenorm_itof_D;
-               Exp_prenorm_D = Exp_prenorm_itof_D;
-               Mant_prenorm_D = Mant_prenorm_itof_D;
+               Sign_norm_D <= Sign_prenorm_itof_D;
+               Exp_prenorm_D <= Exp_prenorm_itof_D;
+               Mant_prenorm_D <= Mant_prenorm_itof_D;
             end
 			default:
             begin
-               Sign_norm_D = 0;
-               Exp_prenorm_D = 0;
-               Mant_prenorm_D = 0;
+               Sign_norm_D <= 0;
+               Exp_prenorm_D <= 0;
+               Mant_prenorm_D <= 0;
             end
 			
         endcase //case (OP_S)
@@ -385,7 +438,7 @@ module fpu
      end
    assign Mant_res_D = Mant_toZero_S ? C_MANT_ZERO : Mant_norm_D;
 
-   assign Result_D = IV_S ? F_QNAN : ((OP_SP == C_FPU_F2I_CMD) ? Result_ftoi_D : {Sign_res_D, Exp_res_D, Mant_res_D[C_MANT-1:0]});
+   assign Result_D = IV_S ? F_QNAN : ((OP_SP == C_FPU_DIV_CMD) ? Div_Result_D : ((OP_SP == C_FPU_F2I_CMD) ? Result_ftoi_D : {Sign_res_D, Exp_res_D, Mant_res_D[C_MANT-1:0]}));
 
    assign Result_DO = Result_D;
    assign UF_SO     = UF_S;

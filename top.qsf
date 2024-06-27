@@ -80,4 +80,11 @@ set_global_assignment -name SYSTEMVERILOG_FILE fpu_ff.sv
 set_global_assignment -name SYSTEMVERILOG_FILE fpu_exc.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name SYSTEMVERILOG_FILE mux4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fpu_div.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fpu_preprocess.sv
+set_global_assignment -name SYSTEMVERILOG_FILE nrbd_nrsc_tp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE iteration_div_sqrt.sv
+set_global_assignment -name SYSTEMVERILOG_FILE iteration_div_sqrt_first.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fpu_control_tp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fpu_norm_div_sqrt.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

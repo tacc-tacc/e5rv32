@@ -6,16 +6,19 @@ module deco_op(
 	output [4:0] ALUControlD,
 	output ALUSrcAD,
 	output [1:0] ALUSrcBD,
-	output [1:0] ResultSrcD,	
+	output ResultSrcD,	
 	output RegWriteD,
+	output FRegWriteD,
 	output MemWriteD,
 	output [1:0] JmpD,
-	output FPUEnableD
+	output FPUEnableD,
+	output [1:0] FRegReadD,
+	output ADDRSrcD
 );
 
 wire ALUDebeSumarD; 
-wire [13:0] ctrl;
-assign {ImmSrcD, ALUDebeSumarD, ALUSrcAD, ALUSrcBD, ResultSrcD, RegWriteD, MemWriteD, JmpD, FPUEnableD} = ctrl;
+wire [16:0] ctrl;
+assign {ImmSrcD, ALUDebeSumarD, ALUSrcAD, ALUSrcBD, ResultSrcD, RegWriteD, FRegWriteD, MemWriteD, JmpD, FPUEnableD, FRegReadD, ADDRSrcD} = ctrl;
 //Saltos: 00 -> desactivado, 01 -> relativo condicional, 10 -> jal, 11 -> jalr
 
 
@@ -23,18 +26,27 @@ wire shifti = ~Fun3D[1] & Fun3D[0]; //shift con valor inmediato -> trunco a los 
 
 always_comb
 	case(OpD)
-		// ImmSrcD_ALUDebeSumarD_ALUSrcAD_ALUSrcBD_ResultSrcD_RegWriteD_MemWriteD_JmpD_FPUEnableD
-		7'b0000011: ctrl <= 14'b000_1_0_01_01_1_0_00_0; // lw
-		7'b0100011: ctrl <= 14'b001_1_0_01_00_0_1_00_0; // sw
-		7'b0110011: ctrl <= 14'bxxx_0_0_00_00_1_0_00_0; // R–type
-		7'b1100011: ctrl <= 14'b010_0_0_00_xx_0_0_01_0; // B-type
-		7'b0010011: ctrl <= {shifti, shifti, 1'b0, 11'b0_0_01_00_1_0_00_0}; // I–type ALU
-		7'b1101111: ctrl <= 14'b011_1_0_00_10_1_0_10_0; // jal
-		7'b0010111: ctrl <= 14'b100_1_1_10_00_1_0_00_0; // auipc
-		7'b0110111: ctrl <= 14'b100_1_1_01_00_1_0_00_0; // lui
-		7'b1100111: ctrl <= 14'b000_1_0_01_10_1_0_11_0; // jalr
-		7'b1010011: ctrl <= 14'bxxx_0_0_00_00_1_0_00_1; // F-type		
-		default: 	ctrl <= 14'bxxx_x_x_xx_xx_0_0_00_0;
+		// ImmSrcD_ALUDebeSumarD_ALUSrcAD_ALUSrcBD_ResultSrcD_RegWriteD_FRegWriteD_MemWriteD_JmpD_FPUEnableD_FRegReadD_ADDRSrcD
+		7'b0000011: ctrl <= 17'b000_1_1_00_1_1_0_0_00_0_00_1; // lw
+		7'b0100011: ctrl <= 17'b001_1_1_00_0_0_0_1_00_0_00_1; // sw
+		7'b0110011: ctrl <= 17'bxxx_0_0_00_0_1_0_0_00_0_00_0; // R–type
+		7'b1100011: ctrl <= 17'b010_0_0_00_x_0_0_0_01_0_00_0; // B-type
+		7'b0010011: ctrl <= {shifti, shifti, 1'b0, 14'b0_0_01_0_1_0_0_00_0_00_0}; // I–type ALU
+		7'b1101111: ctrl <= 17'b011_1_0_00_0_1_0_0_10_0_00_0; // jal
+		7'b0010111: ctrl <= 17'b100_1_1_10_0_1_0_0_00_0_00_0; // auipc
+		7'b0110111: ctrl <= 17'b100_1_1_01_0_1_0_0_00_0_00_0; // lui
+		7'b1100111: ctrl <= 17'b000_1_0_01_0_1_0_0_11_0_00_1; // jalr
+		7'b0000111: ctrl <= 17'bxxx_1_1_00_1_0_1_0_00_0_10_1; // FLW
+		7'b0100111: ctrl <= 17'bxxx_1_1_00_0_0_0_1_00_0_10_1; // FSW
+		7'b1010011: 
+			case(Fun7D)
+				7'b1101000: ctrl <= 17'bxxx_0_0_00_0_1_0_0_00_1_10_0; // FCVT.S.W
+				7'b1100000: ctrl <= 17'bxxx_0_0_00_0_0_1_0_00_1_00_0; // FCVT.W.S
+				7'b1110000: ctrl <= 17'bxxx_1_0_00_0_1_0_0_00_0_10_0; // FMV.X.w
+				7'b1111000: ctrl <= 17'bxxx_1_0_00_0_0_1_0_00_0_00_0; // FMV.W.X
+				default: ctrl <= 17'bxxx_0_0_00_0_0_1_0_00_1_11_0; // F-type
+			endcase
+		default: 	ctrl <= 17'bxxx_x_x_xx_x_0_0_0_00_0_00_0;
 	endcase
 
 	// Primer bit: si es tipo M o si es tipo I/R

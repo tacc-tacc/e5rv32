@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 256 128)
+	(rect 16 16 232 160)
 	(text "ctrl_MW" (rect 5 0 41 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -41,9 +41,9 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 64)
 		(input)
-		(text "ResultSrcM[1..0]" (rect 0 0 67 12)(font "Arial" ))
-		(text "ResultSrcM[1..0]" (rect 21 59 88 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "ResultSrcM" (rect 0 0 48 12)(font "Arial" ))
+		(text "ResultSrcM" (rect 21 59 69 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 0 80)
@@ -53,20 +53,34 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
-		(pt 240 32)
-		(output)
-		(text "ResultSrcW[1..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "ResultSrcW[1..0]" (rect 150 27 219 39)(font "Arial" ))
-		(line (pt 240 32)(pt 224 32)(line_width 3))
+		(pt 0 96)
+		(input)
+		(text "FRegWriteM" (rect 0 0 54 12)(font "Arial" ))
+		(text "FRegWriteM" (rect 21 91 75 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
-		(pt 240 48)
+		(pt 216 32)
+		(output)
+		(text "ResultSrcW" (rect 0 0 50 12)(font "Arial" ))
+		(text "ResultSrcW" (rect 145 27 195 39)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32)(line_width 1))
+	)
+	(port
+		(pt 216 48)
 		(output)
 		(text "RegWriteW" (rect 0 0 50 12)(font "Arial" ))
-		(text "RegWriteW" (rect 169 43 219 55)(font "Arial" ))
-		(line (pt 240 48)(pt 224 48)(line_width 1))
+		(text "RegWriteW" (rect 145 43 195 55)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48)(line_width 1))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "FRegWriteW" (rect 0 0 56 12)(font "Arial" ))
+		(text "FRegWriteW" (rect 139 59 195 71)(font "Arial" ))
+		(line (pt 216 64)(pt 200 64)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 224 96)(line_width 1))
+		(rectangle (rect 16 16 200 128)(line_width 1))
 	)
 )

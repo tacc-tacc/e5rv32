@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Mon Jun 17 15:30:17 2024
+Thu Jun 27 00:30:18 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -21,32 +21,47 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
  15. Source assignments for ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated
- 16. Parameter Settings for User Entity Instance: fpu:inst7
- 17. Parameter Settings for User Entity Instance: fpu:inst7|fpu_add:adder
- 18. Parameter Settings for User Entity Instance: fpu:inst7|fpu_mult:multiplier
- 19. Parameter Settings for User Entity Instance: fpu:inst7|fpu_itof:int2fp
- 20. Parameter Settings for User Entity Instance: fpu:inst7|fpu_ftoi:fp2int
- 21. Parameter Settings for User Entity Instance: fpu:inst7|fpu_norm:normalizer
- 22. Parameter Settings for User Entity Instance: fpu:inst7|fpu_norm:normalizer|fpu_ff:LOD
- 23. Parameter Settings for User Entity Instance: fpu:inst7|fpu_exc:except
- 24. Parameter Settings for User Entity Instance: deco_jmp:inst8
- 25. Parameter Settings for User Entity Instance: alu:inst3
- 26. Parameter Settings for User Entity Instance: immbuilder:inst10
- 27. Parameter Settings for User Entity Instance: ram2p:inst2|altsyncram:altsyncram_component
- 28. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_mult:Mult0
- 29. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_mult:Mult2
- 30. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_mult:Mult1
- 31. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Mod0
- 32. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Div1
- 33. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Div0
- 34. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Mod1
- 35. Parameter Settings for Inferred Entity Instance: fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0
- 36. altsyncram Parameter Settings by Entity Instance
- 37. lpm_mult Parameter Settings by Entity Instance
- 38. Post-Synthesis Netlist Statistics for Top Partition
- 39. Elapsed Time Per Partition
- 40. Analysis & Synthesis Messages
- 41. Analysis & Synthesis Suppressed Messages
+ 16. Parameter Settings for User Entity Instance: ram2p:inst2|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: deco_jmp:inst8
+ 18. Parameter Settings for User Entity Instance: alu:inst3
+ 19. Parameter Settings for User Entity Instance: immbuilder:inst10
+ 20. Parameter Settings for User Entity Instance: fpu:inst7
+ 21. Parameter Settings for User Entity Instance: fpu:inst7|fpu_add:adder
+ 22. Parameter Settings for User Entity Instance: fpu:inst7|fpu_mult:multiplier
+ 23. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider
+ 24. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ua
+ 25. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ub
+ 26. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0
+ 27. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|fpu_control_tp:control_U0
+ 28. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt_first:iteration_unit_U0
+ 29. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U1
+ 30. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U2
+ 31. Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U3
+ 32. Parameter Settings for User Entity Instance: fpu:inst7|fpu_itof:int2fp
+ 33. Parameter Settings for User Entity Instance: fpu:inst7|fpu_ftoi:fp2int
+ 34. Parameter Settings for User Entity Instance: fpu:inst7|fpu_norm:normalizer
+ 35. Parameter Settings for User Entity Instance: fpu:inst7|fpu_norm:normalizer|fpu_ff:LOD
+ 36. Parameter Settings for User Entity Instance: fpu:inst7|fpu_exc:except
+ 37. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_mult:Mult0
+ 38. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_mult:Mult2
+ 39. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_mult:Mult1
+ 40. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Mod0
+ 41. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Div1
+ 42. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Div0
+ 43. Parameter Settings for Inferred Entity Instance: alu:inst3|lpm_divide:Mod1
+ 44. Parameter Settings for Inferred Entity Instance: fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0
+ 45. altsyncram Parameter Settings by Entity Instance
+ 46. lpm_mult Parameter Settings by Entity Instance
+ 47. Port Connectivity Checks: "fpu:inst7|fpu_div:divider|fpu_norm_div_sqrt:fpu_norm_U0"
+ 48. Port Connectivity Checks: "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|fpu_control_tp:control_U0"
+ 49. Port Connectivity Checks: "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0"
+ 50. Port Connectivity Checks: "fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ub"
+ 51. Port Connectivity Checks: "fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ua"
+ 52. Port Connectivity Checks: "fpu:inst7|fpu_div:divider"
+ 53. Post-Synthesis Netlist Statistics for Top Partition
+ 54. Elapsed Time Per Partition
+ 55. Analysis & Synthesis Messages
+ 56. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -73,16 +88,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 17 15:30:17 2024          ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 27 00:30:18 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; top                                            ;
 ; Top-level Entity Name              ; top                                            ;
 ; Family                             ; Cyclone IV GX                                  ;
-; Total logic elements               ; 11,073                                         ;
-;     Total combinational functions  ; 10,069                                         ;
-;     Dedicated logic registers      ; 1,579                                          ;
-; Total registers                    ; 1579                                           ;
-; Total pins                         ; 265                                            ;
+; Total logic elements               ; 13,287                                         ;
+;     Total combinational functions  ; 11,206                                         ;
+;     Dedicated logic registers      ; 2,561                                          ;
+; Total registers                    ; 2561                                           ;
+; Total pins                         ; 316                                            ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 524,288                                        ;
 ; Embedded Multiplier 9-bit elements ; 37                                             ;
@@ -193,9 +208,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
+;     Processor 2            ;   0.4%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -204,35 +219,43 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                    ; Library ;
 +----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
-; fpu_norm.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_norm.sv                                                             ;         ;
-; fpu_mult.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_mult.sv                                                             ;         ;
-; fpu_itof.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_itof.sv                                                             ;         ;
-; fpu_ftoi.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_ftoi.sv                                                             ;         ;
-; fpu_defs.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_defs.sv                                                             ;         ;
-; fpu_add.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_add.sv                                                              ;         ;
-; fpu.sv                           ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu.sv                                                                  ;         ;
-; r32x32.sv                        ; yes             ; User SystemVerilog HDL File            ; D:/rv32/r32x32.sv                                                               ;         ;
-; pipereg_MW.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/rv32/pipereg_MW.sv                                                           ;         ;
-; pipereg_FD.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/rv32/pipereg_FD.sv                                                           ;         ;
-; pipereg_EM.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/rv32/pipereg_EM.sv                                                           ;         ;
-; pipereg_DE.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/rv32/pipereg_DE.sv                                                           ;         ;
-; top.bdf                          ; yes             ; User Block Diagram/Schematic File      ; D:/rv32/top.bdf                                                                 ;         ;
-; pipehazard.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/rv32/pipehazard.sv                                                           ;         ;
-; mux3.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/rv32/mux3.sv                                                                 ;         ;
-; mux2.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/rv32/mux2.sv                                                                 ;         ;
-; immbuilder.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/rv32/immbuilder.sv                                                           ;         ;
-; ff_d.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/rv32/ff_d.sv                                                                 ;         ;
-; deco_op.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/rv32/deco_op.sv                                                              ;         ;
-; deco_jmp.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/rv32/deco_jmp.sv                                                             ;         ;
-; ctrl_MW.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/rv32/ctrl_MW.sv                                                              ;         ;
-; ctrl_EM.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/rv32/ctrl_EM.sv                                                              ;         ;
-; ctrl_DE.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/rv32/ctrl_DE.sv                                                              ;         ;
-; cons.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/rv32/cons.sv                                                                 ;         ;
-; add.sv                           ; yes             ; User SystemVerilog HDL File            ; D:/rv32/add.sv                                                                  ;         ;
-; alu.sv                           ; yes             ; User SystemVerilog HDL File            ; D:/rv32/alu.sv                                                                  ;         ;
-; ram2p.v                          ; yes             ; User Wizard-Generated File             ; D:/rv32/ram2p.v                                                                 ;         ;
-; fpu_ff.sv                        ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_ff.sv                                                               ;         ;
-; fpu_exc.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/rv32/fpu_exc.sv                                                              ;         ;
+; fpu_norm.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_norm.sv                                                           ;         ;
+; fpu_mult.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_mult.sv                                                           ;         ;
+; fpu_itof.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_itof.sv                                                           ;         ;
+; fpu_ftoi.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_ftoi.sv                                                           ;         ;
+; fpu_defs.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_defs.sv                                                           ;         ;
+; fpu_add.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_add.sv                                                            ;         ;
+; fpu.sv                           ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu.sv                                                                ;         ;
+; r32x32.sv                        ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/r32x32.sv                                                             ;         ;
+; pipereg_MW.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/pipereg_MW.sv                                                         ;         ;
+; pipereg_FD.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/pipereg_FD.sv                                                         ;         ;
+; pipereg_EM.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/pipereg_EM.sv                                                         ;         ;
+; pipereg_DE.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/pipereg_DE.sv                                                         ;         ;
+; top.bdf                          ; yes             ; User Block Diagram/Schematic File      ; D:/e5rv32/top.bdf                                                               ;         ;
+; pipehazard.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/pipehazard.sv                                                         ;         ;
+; mux3.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/mux3.sv                                                               ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/mux2.sv                                                               ;         ;
+; immbuilder.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/immbuilder.sv                                                         ;         ;
+; ff_d.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/ff_d.sv                                                               ;         ;
+; deco_op.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/deco_op.sv                                                            ;         ;
+; deco_jmp.sv                      ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/deco_jmp.sv                                                           ;         ;
+; ctrl_MW.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/ctrl_MW.sv                                                            ;         ;
+; ctrl_EM.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/ctrl_EM.sv                                                            ;         ;
+; ctrl_DE.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/ctrl_DE.sv                                                            ;         ;
+; cons.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/cons.sv                                                               ;         ;
+; add.sv                           ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/add.sv                                                                ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/alu.sv                                                                ;         ;
+; ram2p.v                          ; yes             ; User Wizard-Generated File             ; D:/e5rv32/ram2p.v                                                               ;         ;
+; fpu_ff.sv                        ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_ff.sv                                                             ;         ;
+; fpu_exc.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_exc.sv                                                            ;         ;
+; mux4.sv                          ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/mux4.sv                                                               ;         ;
+; fpu_div.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_div.sv                                                            ;         ;
+; fpu_preprocess.sv                ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_preprocess.sv                                                     ;         ;
+; nrbd_nrsc_tp.sv                  ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/nrbd_nrsc_tp.sv                                                       ;         ;
+; iteration_div_sqrt.sv            ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/iteration_div_sqrt.sv                                                 ;         ;
+; iteration_div_sqrt_first.sv      ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/iteration_div_sqrt_first.sv                                           ;         ;
+; fpu_control_tp.sv                ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_control_tp.sv                                                     ;         ;
+; fpu_norm_div_sqrt.sv             ; yes             ; User SystemVerilog HDL File            ; D:/e5rv32/fpu_norm_div_sqrt.sv                                                  ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -242,33 +265,33 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_1vj2.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/altsyncram_1vj2.tdf                                                  ;         ;
-; ./pruebas/fputest.mif            ; yes             ; Auto-Found Memory Initialization File  ; D:/rv32/pruebas/fputest.mif                                                     ;         ;
-; db/decode_d0b.tdf                ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/decode_d0b.tdf                                                       ;         ;
-; db/decode_6ca.tdf                ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/decode_6ca.tdf                                                       ;         ;
-; db/mux_asb.tdf                   ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/mux_asb.tdf                                                          ;         ;
+; db/altsyncram_1vj2.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/altsyncram_1vj2.tdf                                                ;         ;
+; pruebas/fputest.mif              ; yes             ; Auto-Found Memory Initialization File  ; D:/e5rv32/pruebas/fputest.mif                                                   ;         ;
+; db/decode_d0b.tdf                ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/decode_d0b.tdf                                                     ;         ;
+; db/decode_6ca.tdf                ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/decode_6ca.tdf                                                     ;         ;
+; db/mux_asb.tdf                   ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/mux_asb.tdf                                                        ;         ;
 ; lpm_mult.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf          ;         ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_add_sub.inc       ;         ;
 ; multcore.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.inc          ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/bypassff.inc          ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mult_u9t.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/mult_u9t.tdf                                                         ;         ;
-; db/mult_bht.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/mult_bht.tdf                                                         ;         ;
-; db/mult_1ht.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/mult_1ht.tdf                                                         ;         ;
+; db/mult_u9t.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/mult_u9t.tdf                                                       ;         ;
+; db/mult_bht.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/mult_bht.tdf                                                       ;         ;
+; db/mult_1ht.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/mult_1ht.tdf                                                       ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf        ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc       ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc   ;         ;
-; db/lpm_divide_6uo.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/lpm_divide_6uo.tdf                                                   ;         ;
-; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/abs_divider_4dg.tdf                                                  ;         ;
-; db/alt_u_div_0ef.tdf             ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/alt_u_div_0ef.tdf                                                    ;         ;
-; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/add_sub_1tc.tdf                                                      ;         ;
-; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/add_sub_2tc.tdf                                                      ;         ;
-; db/lpm_abs_c4a.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/lpm_abs_c4a.tdf                                                      ;         ;
-; db/lpm_divide_bom.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/lpm_divide_bom.tdf                                                   ;         ;
-; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/sign_div_unsign_9nh.tdf                                              ;         ;
-; db/lpm_divide_36p.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/lpm_divide_36p.tdf                                                   ;         ;
-; db/lpm_divide_egm.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/lpm_divide_egm.tdf                                                   ;         ;
-; db/mult_5ht.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/rv32/db/mult_5ht.tdf                                                         ;         ;
+; db/lpm_divide_6uo.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/lpm_divide_6uo.tdf                                                 ;         ;
+; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/abs_divider_4dg.tdf                                                ;         ;
+; db/alt_u_div_0ef.tdf             ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/alt_u_div_0ef.tdf                                                  ;         ;
+; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/add_sub_1tc.tdf                                                    ;         ;
+; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/add_sub_2tc.tdf                                                    ;         ;
+; db/lpm_abs_c4a.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/lpm_abs_c4a.tdf                                                    ;         ;
+; db/lpm_divide_bom.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/lpm_divide_bom.tdf                                                 ;         ;
+; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/sign_div_unsign_9nh.tdf                                            ;         ;
+; db/lpm_divide_36p.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/lpm_divide_36p.tdf                                                 ;         ;
+; db/lpm_divide_egm.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/lpm_divide_egm.tdf                                                 ;         ;
+; db/mult_5ht.tdf                  ; yes             ; Auto-Generated Megafunction            ; D:/e5rv32/db/mult_5ht.tdf                                                       ;         ;
 +----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
@@ -277,15 +300,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 265              ;
+; I/O pins                 ; 316              ;
 ; Total memory bits        ; 524288           ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 37               ;
 ;                          ;                  ;
 ; Maximum fan-out node     ; clk~input        ;
-; Maximum fan-out          ; 1643             ;
-; Total fan-out            ; 42195            ;
-; Average fan-out          ; 3.44             ;
+; Maximum fan-out          ; 2625             ;
+; Total fan-out            ; 50445            ;
+; Average fan-out          ; 3.48             ;
 +--------------------------+------------------+
 
 
@@ -294,31 +317,31 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |top                                      ; 10069 (1)           ; 1579 (0)                  ; 524288      ; 37           ; 1       ; 18        ; 0         ; 265  ; 0            ; |top                                                                                                                                 ; top                 ; work         ;
-;    |add:inst22|                           ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|add:inst22                                                                                                                      ; add                 ; work         ;
+; |top                                      ; 11206 (1)           ; 2561 (0)                  ; 524288      ; 37           ; 1       ; 18        ; 0         ; 316  ; 0            ; |top                                                                                                                                 ; top                 ; work         ;
+;    |add:inst22|                           ; 60 (60)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|add:inst22                                                                                                                      ; add                 ; work         ;
 ;    |add:inst23|                           ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|add:inst23                                                                                                                      ; add                 ; work         ;
-;    |add:inst24|                           ; 103 (103)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|add:inst24                                                                                                                      ; add                 ; work         ;
-;    |alu:inst3|                            ; 5409 (524)          ; 0 (0)                     ; 0           ; 30           ; 0       ; 15        ; 0         ; 0    ; 0            ; |top|alu:inst3                                                                                                                       ; alu                 ; work         ;
-;       |lpm_divide:Div0|                   ; 1107 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
-;          |lpm_divide_36p:auto_generated|  ; 1107 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div0|lpm_divide_36p:auto_generated                                                                         ; lpm_divide_36p      ; work         ;
-;             |abs_divider_4dg:divider|     ; 1107 (59)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div0|lpm_divide_36p:auto_generated|abs_divider_4dg:divider                                                 ; abs_divider_4dg     ; work         ;
+;    |add:inst24|                           ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|add:inst24                                                                                                                      ; add                 ; work         ;
+;    |alu:inst3|                            ; 5403 (514)          ; 0 (0)                     ; 0           ; 30           ; 0       ; 15        ; 0         ; 0    ; 0            ; |top|alu:inst3                                                                                                                       ; alu                 ; work         ;
+;       |lpm_divide:Div0|                   ; 1108 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_36p:auto_generated|  ; 1108 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div0|lpm_divide_36p:auto_generated                                                                         ; lpm_divide_36p      ; work         ;
+;             |abs_divider_4dg:divider|     ; 1108 (60)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div0|lpm_divide_36p:auto_generated|abs_divider_4dg:divider                                                 ; abs_divider_4dg     ; work         ;
 ;                |alt_u_div_0ef:divider|    ; 1048 (1048)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div0|lpm_divide_36p:auto_generated|abs_divider_4dg:divider|alt_u_div_0ef:divider                           ; alt_u_div_0ef       ; work         ;
-;       |lpm_divide:Div1|                   ; 1075 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1                                                                                                       ; lpm_divide          ; work         ;
-;          |lpm_divide_bom:auto_generated|  ; 1075 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1|lpm_divide_bom:auto_generated                                                                         ; lpm_divide_bom      ; work         ;
-;             |sign_div_unsign_9nh:divider| ; 1075 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1|lpm_divide_bom:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
-;                |alt_u_div_0ef:divider|    ; 1075 (1075)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1|lpm_divide_bom:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_0ef:divider                       ; alt_u_div_0ef       ; work         ;
-;       |lpm_divide:Mod0|                   ; 1319 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0                                                                                                       ; lpm_divide          ; work         ;
-;          |lpm_divide_6uo:auto_generated|  ; 1319 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated                                                                         ; lpm_divide_6uo      ; work         ;
-;             |abs_divider_4dg:divider|     ; 1319 (64)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider                                                 ; abs_divider_4dg     ; work         ;
+;       |lpm_divide:Div1|                   ; 1077 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1                                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_bom:auto_generated|  ; 1077 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1|lpm_divide_bom:auto_generated                                                                         ; lpm_divide_bom      ; work         ;
+;             |sign_div_unsign_9nh:divider| ; 1077 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1|lpm_divide_bom:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
+;                |alt_u_div_0ef:divider|    ; 1077 (1077)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Div1|lpm_divide_bom:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_0ef:divider                       ; alt_u_div_0ef       ; work         ;
+;       |lpm_divide:Mod0|                   ; 1316 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0                                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_6uo:auto_generated|  ; 1316 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated                                                                         ; lpm_divide_6uo      ; work         ;
+;             |abs_divider_4dg:divider|     ; 1316 (63)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider                                                 ; abs_divider_4dg     ; work         ;
 ;                |alt_u_div_0ef:divider|    ; 1151 (1148)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider|alt_u_div_0ef:divider                           ; alt_u_div_0ef       ; work         ;
 ;                   |add_sub_1tc:add_sub_0| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider|alt_u_div_0ef:divider|add_sub_1tc:add_sub_0     ; add_sub_1tc         ; work         ;
 ;                   |add_sub_2tc:add_sub_1| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider|alt_u_div_0ef:divider|add_sub_2tc:add_sub_1     ; add_sub_2tc         ; work         ;
-;                |lpm_abs_c4a:my_abs_den|   ; 59 (59)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider|lpm_abs_c4a:my_abs_den                          ; lpm_abs_c4a         ; work         ;
+;                |lpm_abs_c4a:my_abs_den|   ; 57 (57)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider|lpm_abs_c4a:my_abs_den                          ; lpm_abs_c4a         ; work         ;
 ;                |lpm_abs_c4a:my_abs_num|   ; 45 (45)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod0|lpm_divide_6uo:auto_generated|abs_divider_4dg:divider|lpm_abs_c4a:my_abs_num                          ; lpm_abs_c4a         ; work         ;
-;       |lpm_divide:Mod1|                   ; 1093 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1                                                                                                       ; lpm_divide          ; work         ;
-;          |lpm_divide_egm:auto_generated|  ; 1093 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1|lpm_divide_egm:auto_generated                                                                         ; lpm_divide_egm      ; work         ;
-;             |sign_div_unsign_9nh:divider| ; 1093 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1|lpm_divide_egm:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
-;                |alt_u_div_0ef:divider|    ; 1093 (1092)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1|lpm_divide_egm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_0ef:divider                       ; alt_u_div_0ef       ; work         ;
+;       |lpm_divide:Mod1|                   ; 1097 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1                                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_egm:auto_generated|  ; 1097 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1|lpm_divide_egm:auto_generated                                                                         ; lpm_divide_egm      ; work         ;
+;             |sign_div_unsign_9nh:divider| ; 1097 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1|lpm_divide_egm:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
+;                |alt_u_div_0ef:divider|    ; 1097 (1096)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1|lpm_divide_egm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_0ef:divider                       ; alt_u_div_0ef       ; work         ;
 ;                   |add_sub_2tc:add_sub_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_divide:Mod1|lpm_divide_egm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_0ef:divider|add_sub_2tc:add_sub_1 ; add_sub_2tc         ; work         ;
 ;       |lpm_mult:Mult0|                    ; 92 (0)              ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_mult:Mult0                                                                                                        ; lpm_mult            ; work         ;
 ;          |mult_u9t:auto_generated|        ; 92 (92)             ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_mult:Mult0|mult_u9t:auto_generated                                                                                ; mult_u9t            ; work         ;
@@ -326,33 +349,38 @@ https://fpgasoftware.intel.com/eula.
 ;          |mult_1ht:auto_generated|        ; 79 (79)             ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_mult:Mult1|mult_1ht:auto_generated                                                                                ; mult_1ht            ; work         ;
 ;       |lpm_mult:Mult2|                    ; 120 (0)             ; 0 (0)                     ; 0           ; 14           ; 0       ; 7         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_mult:Mult2                                                                                                        ; lpm_mult            ; work         ;
 ;          |mult_bht:auto_generated|        ; 120 (120)           ; 0 (0)                     ; 0           ; 14           ; 0       ; 7         ; 0         ; 0    ; 0            ; |top|alu:inst3|lpm_mult:Mult2|mult_bht:auto_generated                                                                                ; mult_bht            ; work         ;
-;    |ctrl_DE:inst4|                        ; 35 (35)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ctrl_DE:inst4                                                                                                                   ; ctrl_DE             ; work         ;
+;    |ctrl_DE:inst4|                        ; 29 (29)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ctrl_DE:inst4                                                                                                                   ; ctrl_DE             ; work         ;
 ;    |ctrl_EM:inst5|                        ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ctrl_EM:inst5                                                                                                                   ; ctrl_EM             ; work         ;
 ;    |ctrl_MW:inst6|                        ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ctrl_MW:inst6                                                                                                                   ; ctrl_MW             ; work         ;
 ;    |deco_jmp:inst8|                       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|deco_jmp:inst8                                                                                                                  ; deco_jmp            ; work         ;
-;    |deco_op:inst9|                        ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|deco_op:inst9                                                                                                                   ; deco_op             ; work         ;
-;    |ff_d:inst1|                           ; 3 (3)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ff_d:inst1                                                                                                                      ; ff_d                ; work         ;
-;    |fpu:inst7|                            ; 1803 (356)          ; 74 (74)                   ; 0           ; 7            ; 1       ; 3         ; 0         ; 0    ; 0            ; |top|fpu:inst7                                                                                                                       ; fpu                 ; work         ;
-;       |fpu_add:adder|                     ; 445 (445)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_add:adder                                                                                                         ; fpu_add             ; work         ;
-;       |fpu_exc:except|                    ; 61 (61)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_exc:except                                                                                                        ; fpu_exc             ; work         ;
-;       |fpu_ftoi:fp2int|                   ; 258 (258)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_ftoi:fp2int                                                                                                       ; fpu_ftoi            ; work         ;
+;    |deco_op:inst9|                        ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|deco_op:inst9                                                                                                                   ; deco_op             ; work         ;
+;    |ff_d:inst1|                           ; 61 (61)             ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ff_d:inst1                                                                                                                      ; ff_d                ; work         ;
+;    |fpu:inst7|                            ; 1848 (418)          ; 82 (76)                   ; 0           ; 7            ; 1       ; 3         ; 0         ; 0    ; 0            ; |top|fpu:inst7                                                                                                                       ; fpu                 ; work         ;
+;       |fpu_add:adder|                     ; 441 (441)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_add:adder                                                                                                         ; fpu_add             ; work         ;
+;       |fpu_div:divider|                   ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_div:divider                                                                                                       ; fpu_div             ; work         ;
+;          |nrbd_nrsc_tp:nrbd_nrsc_U0|      ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0                                                                             ; nrbd_nrsc_tp        ; work         ;
+;             |fpu_control_tp:control_U0|   ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|fpu_control_tp:control_U0                                                   ; fpu_control_tp      ; work         ;
+;       |fpu_exc:except|                    ; 55 (55)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_exc:except                                                                                                        ; fpu_exc             ; work         ;
+;       |fpu_ftoi:fp2int|                   ; 244 (244)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_ftoi:fp2int                                                                                                       ; fpu_ftoi            ; work         ;
 ;       |fpu_itof:int2fp|                   ; 31 (31)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_itof:int2fp                                                                                                       ; fpu_itof            ; work         ;
 ;       |fpu_mult:multiplier|               ; 75 (20)             ; 0 (0)                     ; 0           ; 7            ; 1       ; 3         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_mult:multiplier                                                                                                   ; fpu_mult            ; work         ;
 ;          |lpm_mult:Mult0|                 ; 55 (0)              ; 0 (0)                     ; 0           ; 7            ; 1       ; 3         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0                                                                                    ; lpm_mult            ; work         ;
 ;             |mult_5ht:auto_generated|     ; 55 (55)             ; 0 (0)                     ; 0           ; 7            ; 1       ; 3         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0|mult_5ht:auto_generated                                                            ; mult_5ht            ; work         ;
-;       |fpu_norm:normalizer|               ; 577 (506)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_norm:normalizer                                                                                                   ; fpu_norm            ; work         ;
-;          |fpu_ff:LOD|                     ; 71 (71)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_norm:normalizer|fpu_ff:LOD                                                                                        ; fpu_ff              ; work         ;
+;       |fpu_norm:normalizer|               ; 578 (508)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_norm:normalizer                                                                                                   ; fpu_norm            ; work         ;
+;          |fpu_ff:LOD|                     ; 70 (70)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|fpu:inst7|fpu_norm:normalizer|fpu_ff:LOD                                                                                        ; fpu_ff              ; work         ;
+;    |immbuilder:inst10|                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|immbuilder:inst10                                                                                                               ; immbuilder          ; work         ;
 ;    |mux2:inst19|                          ; 97 (97)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux2:inst19                                                                                                                     ; mux2                ; work         ;
-;    |mux2:inst27|                          ; 490 (490)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux2:inst27                                                                                                                     ; mux2                ; work         ;
-;    |mux3:inst21|                          ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux3:inst21                                                                                                                     ; mux3                ; work         ;
-;    |mux3:inst25|                          ; 92 (92)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux3:inst25                                                                                                                     ; mux3                ; work         ;
-;    |mux3:inst26|                          ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux3:inst26                                                                                                                     ; mux3                ; work         ;
-;    |pipehazard:inst13|                    ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipehazard:inst13                                                                                                               ; pipehazard          ; work         ;
-;    |pipereg_DE:inst14|                    ; 158 (158)           ; 143 (143)                 ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_DE:inst14                                                                                                               ; pipereg_DE          ; work         ;
-;    |pipereg_EM:inst15|                    ; 108 (108)           ; 102 (102)                 ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_EM:inst15                                                                                                               ; pipereg_EM          ; work         ;
-;    |pipereg_FD:inst16|                    ; 66 (66)             ; 65 (65)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_FD:inst16                                                                                                               ; pipereg_FD          ; work         ;
-;    |pipereg_MW:inst17|                    ; 102 (102)           ; 101 (101)                 ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_MW:inst17                                                                                                               ; pipereg_MW          ; work         ;
+;    |mux2:inst25|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux2:inst25                                                                                                                     ; mux2                ; work         ;
+;    |mux2:inst27|                          ; 415 (415)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux2:inst27                                                                                                                     ; mux2                ; work         ;
+;    |mux2:inst29|                          ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux2:inst29                                                                                                                     ; mux2                ; work         ;
+;    |mux4:inst28|                          ; 131 (131)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|mux4:inst28                                                                                                                     ; mux4                ; work         ;
+;    |pipehazard:inst13|                    ; 42 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipehazard:inst13                                                                                                               ; pipehazard          ; work         ;
+;    |pipereg_DE:inst14|                    ; 208 (208)           ; 144 (144)                 ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_DE:inst14                                                                                                               ; pipereg_DE          ; work         ;
+;    |pipereg_EM:inst15|                    ; 0 (0)               ; 51 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_EM:inst15                                                                                                               ; pipereg_EM          ; work         ;
+;    |pipereg_FD:inst16|                    ; 67 (67)             ; 65 (65)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_FD:inst16                                                                                                               ; pipereg_FD          ; work         ;
+;    |pipereg_MW:inst17|                    ; 0 (0)               ; 69 (69)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|pipereg_MW:inst17                                                                                                               ; pipereg_MW          ; work         ;
 ;    |r32x32:inst20|                        ; 1328 (1328)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|r32x32:inst20                                                                                                                   ; r32x32              ; work         ;
+;    |r32x32:inst26|                        ; 1312 (1312)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|r32x32:inst26                                                                                                                   ; r32x32              ; work         ;
 ;    |ram2p:inst2|                          ; 66 (0)              ; 4 (0)                     ; 524288      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ram2p:inst2                                                                                                                     ; ram2p               ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 66 (0)              ; 4 (0)                     ; 524288      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ram2p:inst2|altsyncram:altsyncram_component                                                                                     ; altsyncram          ; work         ;
 ;          |altsyncram_1vj2:auto_generated| ; 66 (0)              ; 4 (4)                     ; 524288      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |top|ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated                                                      ; altsyncram_1vj2     ; work         ;
@@ -410,11 +438,14 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +---------------------------------------+-----------------------------------------+
 ; Register name                         ; Reason for Removal                      ;
 +---------------------------------------+-----------------------------------------+
-; fpu:inst7|Enable_SP                   ; Stuck at VCC due to stuck port data_in  ;
-; pipereg_DE:inst14|limpiando           ; Merged with ctrl_DE:inst4|limpiando     ;
-; pipereg_MW:inst17|limpiando           ; Merged with pipereg_EM:inst15|limpiando ;
+; fpu:inst7|prev_Enable_SP              ; Merged with fpu:inst7|Enable_SP         ;
+; ctrl_DE:inst4|limpiando               ; Merged with pipereg_DE:inst14|limpiando ;
+; ff_d:inst1|q[0]                       ; Merged with ff_d:inst1|qa[0]            ;
+; ff_d:inst1|qa[1]                      ; Merged with ff_d:inst1|q[1]             ;
 ; ctrl_MW:inst6|limpiando               ; Merged with ctrl_EM:inst5|limpiando     ;
-; Total Number of Removed Registers = 4 ;                                         ;
+; pipereg_EM:inst15|limpiando           ; Merged with ctrl_EM:inst5|limpiando     ;
+; pipereg_MW:inst17|limpiando           ; Merged with ctrl_EM:inst5|limpiando     ;
+; Total Number of Removed Registers = 7 ;                                         ;
 +---------------------------------------+-----------------------------------------+
 
 
@@ -423,12 +454,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1579  ;
-; Number of registers using Synchronous Clear  ; 32    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Total registers                              ; 2561  ;
+; Number of registers using Synchronous Clear  ; 76    ;
+; Number of registers using Synchronous Load   ; 30    ;
+; Number of registers using Asynchronous Clear ; 508   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1495  ;
+; Number of registers using Clock Enable       ; 2439  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -438,66 +469,67 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; ctrl_EM:inst5|limpiando                ; 7       ;
-; Total number of inverted registers = 1 ;         ;
+; ctrl_EM:inst5|limpiando                ; 127     ;
+; pipereg_FD:inst16|limpiando            ; 1       ;
+; pipereg_DE:inst14|limpiando            ; 5       ;
+; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 69 bits   ; 138 LEs       ; 69 LEs               ; 69 LEs                 ; Yes        ; |top|pipereg_DE:inst14|PCPlus4E[27]             ;
-; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |top|pipereg_FD:inst16|PCPlus4D[23]             ;
-; 3:1                ; 202 bits  ; 404 LEs       ; 202 LEs              ; 202 LEs                ; Yes        ; |top|pipereg_MW:inst17|ReadDataW[9]             ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |top|ff_d:inst1|q[1]                            ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[6]               ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top|pipereg_DE:inst14|RD1E[7]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top|pipereg_DE:inst14|RD2E[5]                  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|ctrl_DE:inst4|ALUControlE[0]               ;
-; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |top|ff_d:inst1|q[31]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[28]              ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[17]              ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[4]               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|mux3:inst26|y[19]                          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|mux3:inst25|y[17]                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0         ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft1   ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft1   ;
-; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Result_DO[19]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|mux3:inst21|y[27]                          ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInB_D[21]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_invA_S        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0         ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft1   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|mux2:inst19|y[0]                           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0         ;
-; 5:1                ; 12 bits   ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft0   ;
-; 5:1                ; 12 bits   ; 36 LEs        ; 24 LEs               ; 12 LEs                 ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft0   ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[23] ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[20]  ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0         ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft0   ;
-; 6:1                ; 9 bits    ; 36 LEs        ; 27 LEs               ; 9 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[39] ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[48] ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[32] ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0         ;
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[16]  ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[10]  ;
-; 128:1              ; 8 bits    ; 680 LEs       ; 64 LEs               ; 616 LEs                ; No         ; |top|fpu:inst7|Selector10                       ;
-; 129:1              ; 4 bits    ; 344 LEs       ; 16 LEs               ; 328 LEs                ; No         ; |top|fpu:inst7|Selector42                       ;
-; 129:1              ; 27 bits   ; 2322 LEs      ; 81 LEs               ; 2241 LEs               ; No         ; |top|fpu:inst7|Selector13                       ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[5]   ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[4]   ;
-; 28:1               ; 7 bits    ; 126 LEs       ; 105 LEs              ; 21 LEs                 ; No         ; |top|mux2:inst27|y[10]                          ;
-; 29:1               ; 6 bits    ; 114 LEs       ; 90 LEs               ; 24 LEs                 ; No         ; |top|mux2:inst27|y[22]                          ;
-; 29:1               ; 4 bits    ; 76 LEs        ; 60 LEs               ; 16 LEs                 ; No         ; |top|mux2:inst27|y[7]                           ;
-; 30:1               ; 2 bits    ; 40 LEs        ; 30 LEs               ; 10 LEs                 ; No         ; |top|mux2:inst27|y[2]                           ;
-; 31:1               ; 4 bits    ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |top|mux2:inst27|y[26]                          ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 34 LEs               ; 8 LEs                  ; No         ; |top|mux2:inst27|y[29]                          ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|deco_op:inst9|Selector0                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
+; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |top|pipereg_FD:inst16|PCPlus4D[14]                                                              ;
+; 3:1                ; 69 bits   ; 138 LEs       ; 69 LEs               ; 69 LEs                 ; Yes        ; |top|pipereg_DE:inst14|PCPlus4E[30]                                                              ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|fpu_control_tp:control_U0|Crtl_cnt_S[2] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top|pipereg_DE:inst14|RD1E[31]                                                                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top|pipereg_DE:inst14|RD2E[25]                                                                  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|ctrl_DE:inst4|ALUControlE[0]                                                                ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[7]                                                                ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[21]                                                               ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[12]                                                               ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top|pipereg_DE:inst14|ImmExtE[1]                                                                ;
+; 130:1              ; 2 bits    ; 172 LEs       ; 44 LEs               ; 128 LEs                ; Yes        ; |top|ctrl_DE:inst4|RegWriteE                                                                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0                                                          ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft1                                                    ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft1                                                    ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Result_DO[18]                                                     ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInB_D[22]                                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_invA_S                                                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0                                                          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft1                                                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|mux2:inst19|y[16]                                                                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0                                                          ;
+; 5:1                ; 12 bits   ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft0                                                    ;
+; 5:1                ; 12 bits   ; 36 LEs        ; 24 LEs               ; 12 LEs                 ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft0                                                    ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[29]                                                  ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |top|mux4:inst28|y[28]                                                                           ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[20]                                                   ;
+; 5:1                ; 23 bits   ; 69 LEs        ; 69 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|Result_DO[20]                                                                     ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0                                                          ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |top|fpu:inst7|fpu_norm:normalizer|ShiftLeft0                                                    ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 27 LEs               ; 9 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[40]                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[52]                                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; No         ; |top|fpu:inst7|fpu_ftoi:fp2int|Temp_shift_D[34]                                                  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|Result_DO[23]                                                                     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|ShiftLeft0                                                          ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[11]                                                   ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[9]                                                    ;
+; 128:1              ; 8 bits    ; 680 LEs       ; 64 LEs               ; 616 LEs                ; No         ; |top|fpu:inst7|Selector9                                                                         ;
+; 129:1              ; 4 bits    ; 344 LEs       ; 16 LEs               ; 328 LEs                ; No         ; |top|fpu:inst7|Selector39                                                                        ;
+; 129:1              ; 27 bits   ; 2322 LEs      ; 81 LEs               ; 2241 LEs               ; No         ; |top|fpu:inst7|Selector23                                                                        ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[5]                                                    ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|fpu:inst7|fpu_add:adder|Mant_addInA_D[4]                                                    ;
+; 25:1               ; 7 bits    ; 112 LEs       ; 91 LEs               ; 21 LEs                 ; No         ; |top|mux2:inst27|y[12]                                                                           ;
+; 26:1               ; 7 bits    ; 119 LEs       ; 91 LEs               ; 28 LEs                 ; No         ; |top|mux2:inst27|y[17]                                                                           ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 56 LEs               ; 12 LEs                 ; No         ; |top|mux2:inst27|y[5]                                                                            ;
+; 27:1               ; 4 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; No         ; |top|mux2:inst27|y[27]                                                                           ;
+; 27:1               ; 2 bits    ; 36 LEs        ; 28 LEs               ; 8 LEs                  ; No         ; |top|mux2:inst27|y[2]                                                                            ;
+; 28:1               ; 2 bits    ; 36 LEs        ; 28 LEs               ; 8 LEs                  ; No         ; |top|mux2:inst27|y[29]                                                                           ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|deco_op:inst9|Selector1                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -507,6 +539,126 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +---------------------------------+--------------------+------+-------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
 +---------------------------------+--------------------+------+-------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ram2p:inst2|altsyncram:altsyncram_component ;
++------------------------------------+------------------------+----------------------------+
+; Parameter Name                     ; Value                  ; Type                       ;
++------------------------------------+------------------------+----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                      ; Untyped                    ;
+; AUTO_CARRY_CHAINS                  ; ON                     ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                    ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                ; ON                     ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                    ; IGNORE_CASCADE             ;
+; WIDTH_BYTEENA                      ; 1                      ; Untyped                    ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT        ; Untyped                    ;
+; WIDTH_A                            ; 32                     ; Signed Integer             ;
+; WIDTHAD_A                          ; 14                     ; Signed Integer             ;
+; NUMWORDS_A                         ; 16384                  ; Signed Integer             ;
+; OUTDATA_REG_A                      ; CLOCK0                 ; Untyped                    ;
+; ADDRESS_ACLR_A                     ; NONE                   ; Untyped                    ;
+; OUTDATA_ACLR_A                     ; NONE                   ; Untyped                    ;
+; WRCONTROL_ACLR_A                   ; NONE                   ; Untyped                    ;
+; INDATA_ACLR_A                      ; NONE                   ; Untyped                    ;
+; BYTEENA_ACLR_A                     ; NONE                   ; Untyped                    ;
+; WIDTH_B                            ; 32                     ; Signed Integer             ;
+; WIDTHAD_B                          ; 14                     ; Signed Integer             ;
+; NUMWORDS_B                         ; 16384                  ; Signed Integer             ;
+; INDATA_REG_B                       ; CLOCK0                 ; Untyped                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0                 ; Untyped                    ;
+; RDCONTROL_REG_B                    ; CLOCK1                 ; Untyped                    ;
+; ADDRESS_REG_B                      ; CLOCK0                 ; Untyped                    ;
+; OUTDATA_REG_B                      ; CLOCK0                 ; Untyped                    ;
+; BYTEENA_REG_B                      ; CLOCK1                 ; Untyped                    ;
+; INDATA_ACLR_B                      ; NONE                   ; Untyped                    ;
+; WRCONTROL_ACLR_B                   ; NONE                   ; Untyped                    ;
+; ADDRESS_ACLR_B                     ; NONE                   ; Untyped                    ;
+; OUTDATA_ACLR_B                     ; NONE                   ; Untyped                    ;
+; RDCONTROL_ACLR_B                   ; NONE                   ; Untyped                    ;
+; BYTEENA_ACLR_B                     ; NONE                   ; Untyped                    ;
+; WIDTH_BYTEENA_A                    ; 1                      ; Signed Integer             ;
+; WIDTH_BYTEENA_B                    ; 1                      ; Signed Integer             ;
+; RAM_BLOCK_TYPE                     ; AUTO                   ; Untyped                    ;
+; BYTE_SIZE                          ; 8                      ; Untyped                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE              ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_WITH_NBE_READ ; Untyped                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_WITH_NBE_READ ; Untyped                    ;
+; INIT_FILE                          ; ./pruebas/fputest.mif  ; Untyped                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A                 ; Untyped                    ;
+; MAXIMUM_DEPTH                      ; 0                      ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                 ; Untyped                    ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                 ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                 ; Untyped                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                 ; Untyped                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN        ; Untyped                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN        ; Untyped                    ;
+; ENABLE_ECC                         ; FALSE                  ; Untyped                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                  ; Untyped                    ;
+; WIDTH_ECCSTATUS                    ; 3                      ; Untyped                    ;
+; DEVICE_FAMILY                      ; Cyclone IV GX          ; Untyped                    ;
+; CBXI_PARAMETER                     ; altsyncram_1vj2        ; Untyped                    ;
++------------------------------------+------------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: deco_jmp:inst8 ;
++-------------------------------+-------+---------------------+
+; Parameter Name                ; Value ; Type                ;
++-------------------------------+-------+---------------------+
+; DESACTIVAR                    ; 00    ; Unsigned Binary     ;
+; BRANCH                        ; 01    ; Unsigned Binary     ;
+; JAL                           ; 10    ; Unsigned Binary     ;
+; JALR                          ; 11    ; Unsigned Binary     ;
+; BRANCH_EQUAL                  ; 000   ; Unsigned Binary     ;
+; BRANCH_NOT_EQUAL              ; 001   ; Unsigned Binary     ;
+; BRANCH_LESS_THAN              ; 100   ; Unsigned Binary     ;
+; BRANCH_GREATER_EQUAL          ; 101   ; Unsigned Binary     ;
+; BRANCH_LESS_THAN_UNSIGNED     ; 110   ; Unsigned Binary     ;
+; BRANCH_GREATER_EQUAL_UNSIGNED ; 111   ; Unsigned Binary     ;
++-------------------------------+-------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:inst3 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; ADD_SUB        ; 000   ; Unsigned Binary               ;
+; SLL            ; 001   ; Unsigned Binary               ;
+; SLT            ; 010   ; Unsigned Binary               ;
+; SLTU           ; 011   ; Unsigned Binary               ;
+; XOR            ; 100   ; Unsigned Binary               ;
+; SRL_SRA        ; 101   ; Unsigned Binary               ;
+; OR             ; 110   ; Unsigned Binary               ;
+; AND            ; 111   ; Unsigned Binary               ;
+; MUL            ; 000   ; Unsigned Binary               ;
+; MULH           ; 001   ; Unsigned Binary               ;
+; MULHSU         ; 010   ; Unsigned Binary               ;
+; MULHU          ; 011   ; Unsigned Binary               ;
+; DIV            ; 100   ; Unsigned Binary               ;
+; DIVU           ; 101   ; Unsigned Binary               ;
+; REM            ; 110   ; Unsigned Binary               ;
+; REMU           ; 111   ; Unsigned Binary               ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: immbuilder:inst10 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; ITYPE          ; 000   ; Unsigned Binary                       ;
+; STYPE          ; 001   ; Unsigned Binary                       ;
+; BTYPE          ; 010   ; Unsigned Binary                       ;
+; JTYPE          ; 011   ; Unsigned Binary                       ;
+; UTYPE          ; 100   ; Unsigned Binary                       ;
+; SHTYPE         ; 110   ; Unsigned Binary                       ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------+
@@ -562,6 +714,99 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; C_MANT         ; 23         ; Signed Integer                               ;
 ; C_BIAS         ; 0001111111 ; Unsigned Binary                              ;
 +----------------+------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider ;
++------------------------+-------+---------------------------------------+
+; Parameter Name         ; Value ; Type                                  ;
++------------------------+-------+---------------------------------------+
+; Precision_ctl_Enable_S ; 0     ; Signed Integer                        ;
+; Accuracy_ctl_Enable_S  ; 1     ; Signed Integer                        ;
++------------------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ua ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; LEN            ; 24    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ub ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; LEN            ; 24    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0 ;
++------------------------+-------+-----------------------------------------------------------------+
+; Parameter Name         ; Value ; Type                                                            ;
++------------------------+-------+-----------------------------------------------------------------+
+; Precision_ctl_Enable_S ; 0     ; Signed Integer                                                  ;
+; Accuracy_ctl_Enable_S  ; 1     ; Signed Integer                                                  ;
++------------------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|fpu_control_tp:control_U0 ;
++------------------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value ; Type                                                                                      ;
++------------------------+-------+-------------------------------------------------------------------------------------------+
+; Precision_ctl_Enable_S ; 0     ; Signed Integer                                                                            ;
+; Accuracy_ctl_Enable_S  ; 1     ; Signed Integer                                                                            ;
++------------------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt_first:iteration_unit_U0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 26    ; Signed Integer                                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 27    ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U2 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 28    ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U3 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 29    ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -648,126 +893,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; C_FPU_I2F_CMD  ; 1100000                  ; Unsigned Binary           ;
 ; C_FPU_F2I_CMD  ; 1101000                  ; Unsigned Binary           ;
 +----------------+--------------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: deco_jmp:inst8 ;
-+-------------------------------+-------+---------------------+
-; Parameter Name                ; Value ; Type                ;
-+-------------------------------+-------+---------------------+
-; DESACTIVAR                    ; 00    ; Unsigned Binary     ;
-; BRANCH                        ; 01    ; Unsigned Binary     ;
-; JAL                           ; 10    ; Unsigned Binary     ;
-; JALR                          ; 11    ; Unsigned Binary     ;
-; BRANCH_EQUAL                  ; 000   ; Unsigned Binary     ;
-; BRANCH_NOT_EQUAL              ; 001   ; Unsigned Binary     ;
-; BRANCH_LESS_THAN              ; 100   ; Unsigned Binary     ;
-; BRANCH_GREATER_EQUAL          ; 101   ; Unsigned Binary     ;
-; BRANCH_LESS_THAN_UNSIGNED     ; 110   ; Unsigned Binary     ;
-; BRANCH_GREATER_EQUAL_UNSIGNED ; 111   ; Unsigned Binary     ;
-+-------------------------------+-------+---------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: alu:inst3 ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; ADD_SUB        ; 000   ; Unsigned Binary               ;
-; SLL            ; 001   ; Unsigned Binary               ;
-; SLT            ; 010   ; Unsigned Binary               ;
-; SLTU           ; 011   ; Unsigned Binary               ;
-; XOR            ; 100   ; Unsigned Binary               ;
-; SRL_SRA        ; 101   ; Unsigned Binary               ;
-; OR             ; 110   ; Unsigned Binary               ;
-; AND            ; 111   ; Unsigned Binary               ;
-; MUL            ; 000   ; Unsigned Binary               ;
-; MULH           ; 001   ; Unsigned Binary               ;
-; MULHSU         ; 010   ; Unsigned Binary               ;
-; MULHU          ; 011   ; Unsigned Binary               ;
-; DIV            ; 100   ; Unsigned Binary               ;
-; DIVU           ; 101   ; Unsigned Binary               ;
-; REM            ; 110   ; Unsigned Binary               ;
-; REMU           ; 111   ; Unsigned Binary               ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: immbuilder:inst10 ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; ITYPE          ; 000   ; Unsigned Binary                       ;
-; STYPE          ; 001   ; Unsigned Binary                       ;
-; BTYPE          ; 010   ; Unsigned Binary                       ;
-; JTYPE          ; 011   ; Unsigned Binary                       ;
-; UTYPE          ; 100   ; Unsigned Binary                       ;
-; SHTYPE         ; 110   ; Unsigned Binary                       ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ram2p:inst2|altsyncram:altsyncram_component ;
-+------------------------------------+------------------------+----------------------------+
-; Parameter Name                     ; Value                  ; Type                       ;
-+------------------------------------+------------------------+----------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                      ; Untyped                    ;
-; AUTO_CARRY_CHAINS                  ; ON                     ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS               ; OFF                    ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS                ; ON                     ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                    ; IGNORE_CASCADE             ;
-; WIDTH_BYTEENA                      ; 1                      ; Untyped                    ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT        ; Untyped                    ;
-; WIDTH_A                            ; 32                     ; Signed Integer             ;
-; WIDTHAD_A                          ; 14                     ; Signed Integer             ;
-; NUMWORDS_A                         ; 16384                  ; Signed Integer             ;
-; OUTDATA_REG_A                      ; CLOCK0                 ; Untyped                    ;
-; ADDRESS_ACLR_A                     ; NONE                   ; Untyped                    ;
-; OUTDATA_ACLR_A                     ; NONE                   ; Untyped                    ;
-; WRCONTROL_ACLR_A                   ; NONE                   ; Untyped                    ;
-; INDATA_ACLR_A                      ; NONE                   ; Untyped                    ;
-; BYTEENA_ACLR_A                     ; NONE                   ; Untyped                    ;
-; WIDTH_B                            ; 32                     ; Signed Integer             ;
-; WIDTHAD_B                          ; 14                     ; Signed Integer             ;
-; NUMWORDS_B                         ; 16384                  ; Signed Integer             ;
-; INDATA_REG_B                       ; CLOCK0                 ; Untyped                    ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0                 ; Untyped                    ;
-; RDCONTROL_REG_B                    ; CLOCK1                 ; Untyped                    ;
-; ADDRESS_REG_B                      ; CLOCK0                 ; Untyped                    ;
-; OUTDATA_REG_B                      ; CLOCK0                 ; Untyped                    ;
-; BYTEENA_REG_B                      ; CLOCK1                 ; Untyped                    ;
-; INDATA_ACLR_B                      ; NONE                   ; Untyped                    ;
-; WRCONTROL_ACLR_B                   ; NONE                   ; Untyped                    ;
-; ADDRESS_ACLR_B                     ; NONE                   ; Untyped                    ;
-; OUTDATA_ACLR_B                     ; NONE                   ; Untyped                    ;
-; RDCONTROL_ACLR_B                   ; NONE                   ; Untyped                    ;
-; BYTEENA_ACLR_B                     ; NONE                   ; Untyped                    ;
-; WIDTH_BYTEENA_A                    ; 1                      ; Signed Integer             ;
-; WIDTH_BYTEENA_B                    ; 1                      ; Signed Integer             ;
-; RAM_BLOCK_TYPE                     ; AUTO                   ; Untyped                    ;
-; BYTE_SIZE                          ; 8                      ; Untyped                    ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE              ; Untyped                    ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_WITH_NBE_READ ; Untyped                    ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_WITH_NBE_READ ; Untyped                    ;
-; INIT_FILE                          ; ./pruebas/fputest.mif  ; Untyped                    ;
-; INIT_FILE_LAYOUT                   ; PORT_A                 ; Untyped                    ;
-; MAXIMUM_DEPTH                      ; 0                      ; Untyped                    ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                 ; Untyped                    ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                 ; Untyped                    ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                 ; Untyped                    ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                 ; Untyped                    ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN        ; Untyped                    ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN        ; Untyped                    ;
-; ENABLE_ECC                         ; FALSE                  ; Untyped                    ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                  ; Untyped                    ;
-; WIDTH_ECCSTATUS                    ; 3                      ; Untyped                    ;
-; DEVICE_FAMILY                      ; Cyclone IV GX          ; Untyped                    ;
-; CBXI_PARAMETER                     ; altsyncram_1vj2        ; Untyped                    ;
-+------------------------------------+------------------------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1076,34 +1201,99 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+----------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpu:inst7|fpu_div:divider|fpu_norm_div_sqrt:fpu_norm_U0"                                                                                ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                          ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; Mant_res_DO ; Output ; Warning  ; Output or bidir port (23 bits) is wider than the port expression (1 bits) it drives; bit(s) "Mant_res_DO[22..1]" have no fanouts ;
+; Mant_res_DO ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
+; Exp_res_DO  ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "Exp_res_DO[7..1]" have no fanouts    ;
+; Exp_res_DO  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
+; Sign_res_DO ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
+; Exp_OF_SO   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
+; Exp_UF_SO   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
+; Div_zero_SO ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                              ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|fpu_control_tp:control_U0" ;
++-------------------+--------+----------+-------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                           ;
++-------------------+--------+----------+-------------------------------------------------------------------+
+; Sqrt_start_dly_SO ; Output ; Info     ; Explicitly unconnected                                            ;
++-------------------+--------+----------+-------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0"                                    ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Ready_SO ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ub" ;
++-----------+--------+----------+---------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                       ;
++-----------+--------+----------+---------------------------------------------------------------+
+; no_ones_o ; Output ; Info     ; Explicitly unconnected                                        ;
++-----------+--------+----------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ua" ;
++-----------+--------+----------+---------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                       ;
++-----------+--------+----------+---------------------------------------------------------------+
+; no_ones_o ; Output ; Info     ; Explicitly unconnected                                        ;
++-----------+--------+----------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpu:inst7|fpu_div:divider"                                                                                                                                                                        ;
++------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                   ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RM_SI                  ; Input ; Warning  ; Input port expression (3 bits) is wider than the input port (2 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Precision_ctl_SI[2..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                     ;
+; Precision_ctl_SI[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                     ;
+; Precision_ctl_SI[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                     ;
++------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 265                         ;
-; cycloneiii_ff         ; 1579                        ;
-;     CLR               ; 1                           ;
-;     ENA               ; 1456                        ;
-;     ENA CLR           ; 7                           ;
-;     ENA SCLR          ; 32                          ;
-;     plain             ; 83                          ;
-; cycloneiii_lcell_comb ; 10070                       ;
-;     arith             ; 2917                        ;
-;         2 data inputs ; 179                         ;
+; boundary_port         ; 316                         ;
+; cycloneiii_ff         ; 2561                        ;
+;     CLR               ; 88                          ;
+;     CLR SLD           ; 30                          ;
+;     ENA               ; 2049                        ;
+;     ENA CLR           ; 314                         ;
+;     ENA CLR SCLR      ; 76                          ;
+;     plain             ; 4                           ;
+; cycloneiii_lcell_comb ; 11208                       ;
+;     arith             ; 2946                        ;
+;         2 data inputs ; 208                         ;
 ;         3 data inputs ; 2738                        ;
-;     normal            ; 7153                        ;
-;         0 data inputs ; 133                         ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 360                         ;
-;         3 data inputs ; 1495                        ;
-;         4 data inputs ; 5156                        ;
+;     normal            ; 8262                        ;
+;         0 data inputs ; 132                         ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 243                         ;
+;         3 data inputs ; 1580                        ;
+;         4 data inputs ; 6295                        ;
 ; cycloneiii_mac_mult   ; 19                          ;
 ; cycloneiii_mac_out    ; 19                          ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 148.40                      ;
-; Average LUT depth     ; 78.29                       ;
+; Max LUT depth         ; 149.50                      ;
+; Average LUT depth     ; 68.56                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1112,7 +1302,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:34     ;
+; Top            ; 00:00:32     ;
 +----------------+--------------+
 
 
@@ -1122,104 +1312,103 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Mon Jun 17 15:29:31 2024
+    Info: Processing started: Thu Jun 27 00:29:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rv32 -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fpu_norm.sv
-    Info (12023): Found entity 1: fpu_norm File: D:/rv32/fpu_norm.sv Line: 39
+    Info (12023): Found entity 1: fpu_norm File: D:/e5rv32/fpu_norm.sv Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file fpu_mult.sv
-    Info (12023): Found entity 1: fpu_mult File: D:/rv32/fpu_mult.sv Line: 38
+    Info (12023): Found entity 1: fpu_mult File: D:/e5rv32/fpu_mult.sv Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file fpu_itof.sv
-    Info (12023): Found entity 1: fpu_itof File: D:/rv32/fpu_itof.sv Line: 38
+    Info (12023): Found entity 1: fpu_itof File: D:/e5rv32/fpu_itof.sv Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file fpu_ftoi.sv
-    Info (12023): Found entity 1: fpu_ftoi File: D:/rv32/fpu_ftoi.sv Line: 38
+    Info (12023): Found entity 1: fpu_ftoi File: D:/e5rv32/fpu_ftoi.sv Line: 38
 Info (12021): Found 1 design units, including 0 entities, in source file fpu_defs.sv
-    Info (12022): Found design unit 1: fpu_defs (SystemVerilog) File: D:/rv32/fpu_defs.sv Line: 20
+    Info (12022): Found design unit 1: fpu_defs (SystemVerilog) File: D:/e5rv32/fpu_defs.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file fpu_add.sv
-    Info (12023): Found entity 1: fpu_add File: D:/rv32/fpu_add.sv Line: 38
+    Info (12023): Found entity 1: fpu_add File: D:/e5rv32/fpu_add.sv Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file fpu.sv
-    Info (12023): Found entity 1: fpu File: D:/rv32/fpu.sv Line: 46
+    Info (12023): Found entity 1: fpu File: D:/e5rv32/fpu.sv Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file r32x32.sv
-    Info (12023): Found entity 1: r32x32 File: D:/rv32/r32x32.sv Line: 1
+    Info (12023): Found entity 1: r32x32 File: D:/e5rv32/r32x32.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pipereg_mw.sv
-    Info (12023): Found entity 1: pipereg_MW File: D:/rv32/pipereg_MW.sv Line: 1
+    Info (12023): Found entity 1: pipereg_MW File: D:/e5rv32/pipereg_MW.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pipereg_fd.sv
-    Info (12023): Found entity 1: pipereg_FD File: D:/rv32/pipereg_FD.sv Line: 1
+    Info (12023): Found entity 1: pipereg_FD File: D:/e5rv32/pipereg_FD.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pipereg_em.sv
-    Info (12023): Found entity 1: pipereg_EM File: D:/rv32/pipereg_EM.sv Line: 1
+    Info (12023): Found entity 1: pipereg_EM File: D:/e5rv32/pipereg_EM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pipereg_de.sv
-    Info (12023): Found entity 1: pipereg_DE File: D:/rv32/pipereg_DE.sv Line: 1
+    Info (12023): Found entity 1: pipereg_DE File: D:/e5rv32/pipereg_DE.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top.bdf
     Info (12023): Found entity 1: top
 Info (12021): Found 1 design units, including 1 entities, in source file pipehazard.sv
-    Info (12023): Found entity 1: pipehazard File: D:/rv32/pipehazard.sv Line: 1
+    Info (12023): Found entity 1: pipehazard File: D:/e5rv32/pipehazard.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux3.sv
-    Info (12023): Found entity 1: mux3 File: D:/rv32/mux3.sv Line: 1
+    Info (12023): Found entity 1: mux3 File: D:/e5rv32/mux3.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
-    Info (12023): Found entity 1: mux2 File: D:/rv32/mux2.sv Line: 1
+    Info (12023): Found entity 1: mux2 File: D:/e5rv32/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file immbuilder.sv
-    Info (12023): Found entity 1: immbuilder File: D:/rv32/immbuilder.sv Line: 1
+    Info (12023): Found entity 1: immbuilder File: D:/e5rv32/immbuilder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ff_d.sv
-    Info (12023): Found entity 1: ff_d File: D:/rv32/ff_d.sv Line: 1
+    Info (12023): Found entity 1: ff_d File: D:/e5rv32/ff_d.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file deco_op.sv
-    Info (12023): Found entity 1: deco_op File: D:/rv32/deco_op.sv Line: 1
+    Info (12023): Found entity 1: deco_op File: D:/e5rv32/deco_op.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file deco_jmp.sv
-    Info (12023): Found entity 1: deco_jmp File: D:/rv32/deco_jmp.sv Line: 1
+    Info (12023): Found entity 1: deco_jmp File: D:/e5rv32/deco_jmp.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ctrl_mw.sv
-    Info (12023): Found entity 1: ctrl_MW File: D:/rv32/ctrl_MW.sv Line: 1
+    Info (12023): Found entity 1: ctrl_MW File: D:/e5rv32/ctrl_MW.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ctrl_em.sv
-    Info (12023): Found entity 1: ctrl_EM File: D:/rv32/ctrl_EM.sv Line: 1
+    Info (12023): Found entity 1: ctrl_EM File: D:/e5rv32/ctrl_EM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ctrl_de.sv
-    Info (12023): Found entity 1: ctrl_DE File: D:/rv32/ctrl_DE.sv Line: 1
+    Info (12023): Found entity 1: ctrl_DE File: D:/e5rv32/ctrl_DE.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cons.sv
-    Info (12023): Found entity 1: cons File: D:/rv32/cons.sv Line: 1
+    Info (12023): Found entity 1: cons File: D:/e5rv32/cons.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add.sv
-    Info (12023): Found entity 1: add File: D:/rv32/add.sv Line: 1
+    Info (12023): Found entity 1: add File: D:/e5rv32/add.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: D:/rv32/alu.sv Line: 1
+    Info (12023): Found entity 1: alu File: D:/e5rv32/alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ram2p.v
-    Info (12023): Found entity 1: ram2p File: D:/rv32/ram2p.v Line: 40
+    Info (12023): Found entity 1: ram2p File: D:/e5rv32/ram2p.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file fpu_ff.sv
-    Info (12023): Found entity 1: fpu_ff File: D:/rv32/fpu_ff.sv Line: 31
+    Info (12023): Found entity 1: fpu_ff File: D:/e5rv32/fpu_ff.sv Line: 31
 Info (12021): Found 1 design units, including 1 entities, in source file fpu_exc.sv
-    Info (12023): Found entity 1: fpu_exc File: D:/rv32/fpu_exc.sv Line: 43
+    Info (12023): Found entity 1: fpu_exc File: D:/e5rv32/fpu_exc.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.sv
+    Info (12023): Found entity 1: mux4 File: D:/e5rv32/mux4.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fpu_div.sv
+    Info (12023): Found entity 1: fpu_div File: D:/e5rv32/fpu_div.sv Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file fpu_preprocess.sv
+    Info (12023): Found entity 1: fpu_preprocess File: D:/e5rv32/fpu_preprocess.sv Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file nrbd_nrsc_tp.sv
+    Info (12023): Found entity 1: nrbd_nrsc_tp File: D:/e5rv32/nrbd_nrsc_tp.sv Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file iteration_div_sqrt.sv
+    Info (12023): Found entity 1: iteration_div_sqrt File: D:/e5rv32/iteration_div_sqrt.sv Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file iteration_div_sqrt_first.sv
+    Info (12023): Found entity 1: iteration_div_sqrt_first File: D:/e5rv32/iteration_div_sqrt_first.sv Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file fpu_control_tp.sv
+    Info (12023): Found entity 1: fpu_control_tp File: D:/e5rv32/fpu_control_tp.sv Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file fpu_norm_div_sqrt.sv
+    Info (12023): Found entity 1: fpu_norm_div_sqrt File: D:/e5rv32/fpu_norm_div_sqrt.sv Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at fpu_div.sv(158): created implicit net for "Mant_res_DO" File: D:/e5rv32/fpu_div.sv Line: 158
+Warning (10236): Verilog HDL Implicit Net warning at fpu_div.sv(159): created implicit net for "Exp_res_DO" File: D:/e5rv32/fpu_div.sv Line: 159
+Warning (10236): Verilog HDL Implicit Net warning at fpu_div.sv(160): created implicit net for "Sign_res_DO" File: D:/e5rv32/fpu_div.sv Line: 160
+Warning (10236): Verilog HDL Implicit Net warning at fpu_div.sv(161): created implicit net for "Exp_OF_SO" File: D:/e5rv32/fpu_div.sv Line: 161
+Warning (10236): Verilog HDL Implicit Net warning at fpu_div.sv(162): created implicit net for "Exp_UF_SO" File: D:/e5rv32/fpu_div.sv Line: 162
+Warning (10236): Verilog HDL Implicit Net warning at fpu_div.sv(163): created implicit net for "Div_zero_SO" File: D:/e5rv32/fpu_div.sv Line: 163
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (275011): Block or symbol "mux3" of instance "inst12" overlaps another block or symbol
-Warning (275011): Block or symbol "add" of instance "inst23" overlaps another block or symbol
-Warning (275011): Block or symbol "pipehazard" of instance "inst13" overlaps another block or symbol
-Info (12128): Elaborating entity "fpu" for hierarchy "fpu:inst7"
-Info (12128): Elaborating entity "fpu_add" for hierarchy "fpu:inst7|fpu_add:adder" File: D:/rv32/fpu.sv Line: 184
-Info (12128): Elaborating entity "fpu_mult" for hierarchy "fpu:inst7|fpu_mult:multiplier" File: D:/rv32/fpu.sv Line: 209
-Info (12128): Elaborating entity "fpu_itof" for hierarchy "fpu:inst7|fpu_itof:int2fp" File: D:/rv32/fpu.sv Line: 228
-Info (12128): Elaborating entity "fpu_ftoi" for hierarchy "fpu:inst7|fpu_ftoi:fp2int" File: D:/rv32/fpu.sv Line: 257
-Warning (10764): Verilog HDL warning at fpu_ftoi.sv(90): converting signed shift amount to unsigned File: D:/rv32/fpu_ftoi.sv Line: 90
-Info (12128): Elaborating entity "fpu_norm" for hierarchy "fpu:inst7|fpu_norm:normalizer" File: D:/rv32/fpu.sv Line: 318
-Warning (10230): Verilog HDL assignment warning at fpu_norm.sv(120): truncated value with size 32 to match size of target (11) File: D:/rv32/fpu_norm.sv Line: 120
-Warning (10764): Verilog HDL warning at fpu_norm.sv(126): converting signed shift amount to unsigned File: D:/rv32/fpu_norm.sv Line: 126
-Warning (10764): Verilog HDL warning at fpu_norm.sv(136): converting signed shift amount to unsigned File: D:/rv32/fpu_norm.sv Line: 136
-Warning (10230): Verilog HDL assignment warning at fpu_norm.sv(140): truncated value with size 32 to match size of target (10) File: D:/rv32/fpu_norm.sv Line: 140
-Warning (10230): Verilog HDL assignment warning at fpu_norm.sv(205): truncated value with size 25 to match size of target (24) File: D:/rv32/fpu_norm.sv Line: 205
-Info (12128): Elaborating entity "fpu_ff" for hierarchy "fpu:inst7|fpu_norm:normalizer|fpu_ff:LOD" File: D:/rv32/fpu_norm.sv Line: 110
-Warning (10230): Verilog HDL assignment warning at fpu_ff.sv(58): truncated value with size 32 to match size of target (6) File: D:/rv32/fpu_ff.sv Line: 58
-Info (12128): Elaborating entity "fpu_exc" for hierarchy "fpu:inst7|fpu_exc:except" File: D:/rv32/fpu.sv Line: 370
-Info (12128): Elaborating entity "cons" for hierarchy "cons:inst"
-Info (12128): Elaborating entity "ctrl_DE" for hierarchy "ctrl_DE:inst4"
+Warning (275011): Block or symbol "r32x32" of instance "inst26" overlaps another block or symbol
+Warning (275011): Block or symbol "deco_jmp" of instance "inst8" overlaps another block or symbol
+Warning (275043): Pin "zero" is missing source
 Info (12128): Elaborating entity "pipehazard" for hierarchy "pipehazard:inst13"
 Info (12128): Elaborating entity "ctrl_EM" for hierarchy "ctrl_EM:inst5"
-Info (12128): Elaborating entity "ctrl_MW" for hierarchy "ctrl_MW:inst6"
-Info (12128): Elaborating entity "deco_jmp" for hierarchy "deco_jmp:inst8"
-Info (12128): Elaborating entity "alu" for hierarchy "alu:inst3"
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst19"
-Info (12128): Elaborating entity "mux3" for hierarchy "mux3:inst12"
-Info (12128): Elaborating entity "pipereg_DE" for hierarchy "pipereg_DE:inst14"
-Info (12128): Elaborating entity "immbuilder" for hierarchy "immbuilder:inst10"
+Info (12128): Elaborating entity "ctrl_DE" for hierarchy "ctrl_DE:inst4"
 Info (12128): Elaborating entity "deco_op" for hierarchy "deco_op:inst9"
 Info (12128): Elaborating entity "pipereg_FD" for hierarchy "pipereg_FD:inst16"
 Info (12128): Elaborating entity "ram2p" for hierarchy "ram2p:inst2"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component" File: D:/rv32/ram2p.v Line: 98
-Info (12130): Elaborated megafunction instantiation "ram2p:inst2|altsyncram:altsyncram_component" File: D:/rv32/ram2p.v Line: 98
-Info (12133): Instantiated megafunction "ram2p:inst2|altsyncram:altsyncram_component" with the following parameter: File: D:/rv32/ram2p.v Line: 98
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component" File: D:/e5rv32/ram2p.v Line: 98
+Info (12130): Elaborated megafunction instantiation "ram2p:inst2|altsyncram:altsyncram_component" File: D:/e5rv32/ram2p.v Line: 98
+Info (12133): Instantiated megafunction "ram2p:inst2|altsyncram:altsyncram_component" with the following parameter: File: D:/e5rv32/ram2p.v Line: 98
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -1248,37 +1437,90 @@ Info (12133): Instantiated megafunction "ram2p:inst2|altsyncram:altsyncram_compo
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1vj2.tdf
-    Info (12023): Found entity 1: altsyncram_1vj2 File: D:/rv32/db/altsyncram_1vj2.tdf Line: 34
+    Info (12023): Found entity 1: altsyncram_1vj2 File: D:/e5rv32/db/altsyncram_1vj2.tdf Line: 34
 Info (12128): Elaborating entity "altsyncram_1vj2" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113028): 16376 out of 16384 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: D:/rv32/pruebas/fputest.mif Line: 1
-    Warning (113027): Addresses ranging from 8 to 16383 are not initialized File: D:/rv32/pruebas/fputest.mif Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_d0b.tdf
-    Info (12023): Found entity 1: decode_d0b File: D:/rv32/db/decode_d0b.tdf Line: 23
-Info (12128): Elaborating entity "decode_d0b" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated|decode_d0b:decode2" File: D:/rv32/db/altsyncram_1vj2.tdf Line: 51
+    Info (12023): Found entity 1: decode_d0b File: D:/e5rv32/db/decode_d0b.tdf Line: 23
+Info (12128): Elaborating entity "decode_d0b" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated|decode_d0b:decode2" File: D:/e5rv32/db/altsyncram_1vj2.tdf Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_6ca.tdf
-    Info (12023): Found entity 1: decode_6ca File: D:/rv32/db/decode_6ca.tdf Line: 23
-Info (12128): Elaborating entity "decode_6ca" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated|decode_6ca:rden_decode_a" File: D:/rv32/db/altsyncram_1vj2.tdf Line: 53
+    Info (12023): Found entity 1: decode_6ca File: D:/e5rv32/db/decode_6ca.tdf Line: 23
+Info (12128): Elaborating entity "decode_6ca" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated|decode_6ca:rden_decode_a" File: D:/e5rv32/db/altsyncram_1vj2.tdf Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_asb.tdf
-    Info (12023): Found entity 1: mux_asb File: D:/rv32/db/mux_asb.tdf Line: 23
-Info (12128): Elaborating entity "mux_asb" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated|mux_asb:mux4" File: D:/rv32/db/altsyncram_1vj2.tdf Line: 55
+    Info (12023): Found entity 1: mux_asb File: D:/e5rv32/db/mux_asb.tdf Line: 23
+Info (12128): Elaborating entity "mux_asb" for hierarchy "ram2p:inst2|altsyncram:altsyncram_component|altsyncram_1vj2:auto_generated|mux_asb:mux4" File: D:/e5rv32/db/altsyncram_1vj2.tdf Line: 55
+Info (12128): Elaborating entity "cons" for hierarchy "cons:inst"
 Info (12128): Elaborating entity "ff_d" for hierarchy "ff_d:inst1"
-Info (12128): Elaborating entity "add" for hierarchy "add:inst24"
-Info (12128): Elaborating entity "pipereg_EM" for hierarchy "pipereg_EM:inst15"
-Info (12128): Elaborating entity "pipereg_MW" for hierarchy "pipereg_MW:inst17"
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst11"
+Info (12128): Elaborating entity "deco_jmp" for hierarchy "deco_jmp:inst8"
+Info (12128): Elaborating entity "alu" for hierarchy "alu:inst3"
+Info (12128): Elaborating entity "mux3" for hierarchy "mux3:inst12"
+Info (12128): Elaborating entity "pipereg_DE" for hierarchy "pipereg_DE:inst14"
+Info (12128): Elaborating entity "immbuilder" for hierarchy "immbuilder:inst10"
 Info (12128): Elaborating entity "r32x32" for hierarchy "r32x32:inst20"
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "r32x32:inst20|rf" is uninferred due to asynchronous read logic File: D:/rv32/r32x32.sv Line: 8
+Info (12128): Elaborating entity "ctrl_MW" for hierarchy "ctrl_MW:inst6"
+Info (12128): Elaborating entity "pipereg_MW" for hierarchy "pipereg_MW:inst17"
+Info (12128): Elaborating entity "pipereg_EM" for hierarchy "pipereg_EM:inst15"
+Info (12128): Elaborating entity "add" for hierarchy "add:inst23"
+Info (12128): Elaborating entity "fpu" for hierarchy "fpu:inst7"
+Info (12128): Elaborating entity "fpu_add" for hierarchy "fpu:inst7|fpu_add:adder" File: D:/e5rv32/fpu.sv Line: 198
+Info (12128): Elaborating entity "fpu_mult" for hierarchy "fpu:inst7|fpu_mult:multiplier" File: D:/e5rv32/fpu.sv Line: 223
+Info (12128): Elaborating entity "fpu_div" for hierarchy "fpu:inst7|fpu_div:divider" File: D:/e5rv32/fpu.sv Line: 248
+Warning (10034): Output port "Result_DO" at fpu_div.sv(52) has no driver File: D:/e5rv32/fpu_div.sv Line: 52
+Info (12128): Elaborating entity "fpu_preprocess" for hierarchy "fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0" File: D:/e5rv32/fpu_div.sv Line: 120
+Info (12128): Elaborating entity "fpu_ff" for hierarchy "fpu:inst7|fpu_div:divider|fpu_preprocess:precess_U0|fpu_ff:LOD_Ua" File: D:/e5rv32/fpu_preprocess.sv Line: 212
+Warning (10230): Verilog HDL assignment warning at fpu_ff.sv(58): truncated value with size 32 to match size of target (5) File: D:/e5rv32/fpu_ff.sv Line: 58
+Info (12128): Elaborating entity "nrbd_nrsc_tp" for hierarchy "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0" File: D:/e5rv32/fpu_div.sv Line: 141
+Info (12128): Elaborating entity "fpu_control_tp" for hierarchy "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|fpu_control_tp:control_U0" File: D:/e5rv32/nrbd_nrsc_tp.sv Line: 117
+Warning (10036): Verilog HDL or VHDL warning at fpu_control_tp.sv(670): object "Sum_msc_D" assigned a value but never read File: D:/e5rv32/fpu_control_tp.sv Line: 670
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(589): truncated value with size 26 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 589
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(591): truncated value with size 26 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 591
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(600): truncated value with size 27 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 600
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(602): truncated value with size 27 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 602
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(612): truncated value with size 28 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 612
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(614): truncated value with size 28 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 614
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(623): truncated value with size 29 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 623
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(625): truncated value with size 29 to match size of target (25) File: D:/e5rv32/fpu_control_tp.sv Line: 625
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(800): truncated value with size 11 to match size of target (10) File: D:/e5rv32/fpu_control_tp.sv Line: 800
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(801): truncated value with size 11 to match size of target (10) File: D:/e5rv32/fpu_control_tp.sv Line: 801
+Warning (10230): Verilog HDL assignment warning at fpu_control_tp.sv(802): truncated value with size 34 to match size of target (10) File: D:/e5rv32/fpu_control_tp.sv Line: 802
+Info (12128): Elaborating entity "iteration_div_sqrt_first" for hierarchy "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt_first:iteration_unit_U0" File: D:/e5rv32/nrbd_nrsc_tp.sv Line: 130
+Info (12128): Elaborating entity "iteration_div_sqrt" for hierarchy "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U1" File: D:/e5rv32/nrbd_nrsc_tp.sv Line: 142
+Warning (10230): Verilog HDL assignment warning at iteration_div_sqrt.sv(56): truncated value with size 32 to match size of target (1) File: D:/e5rv32/iteration_div_sqrt.sv Line: 56
+Info (12128): Elaborating entity "iteration_div_sqrt" for hierarchy "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U2" File: D:/e5rv32/nrbd_nrsc_tp.sv Line: 154
+Warning (10230): Verilog HDL assignment warning at iteration_div_sqrt.sv(56): truncated value with size 32 to match size of target (1) File: D:/e5rv32/iteration_div_sqrt.sv Line: 56
+Info (12128): Elaborating entity "iteration_div_sqrt" for hierarchy "fpu:inst7|fpu_div:divider|nrbd_nrsc_tp:nrbd_nrsc_U0|iteration_div_sqrt:iteration_unit_U3" File: D:/e5rv32/nrbd_nrsc_tp.sv Line: 166
+Warning (10230): Verilog HDL assignment warning at iteration_div_sqrt.sv(56): truncated value with size 32 to match size of target (1) File: D:/e5rv32/iteration_div_sqrt.sv Line: 56
+Info (12128): Elaborating entity "fpu_norm_div_sqrt" for hierarchy "fpu:inst7|fpu_div:divider|fpu_norm_div_sqrt:fpu_norm_U0" File: D:/e5rv32/fpu_div.sv Line: 164
+Warning (10230): Verilog HDL assignment warning at fpu_norm_div_sqrt.sv(79): truncated value with size 32 to match size of target (10) File: D:/e5rv32/fpu_norm_div_sqrt.sv Line: 79
+Warning (10230): Verilog HDL assignment warning at fpu_norm_div_sqrt.sv(81): truncated value with size 32 to match size of target (10) File: D:/e5rv32/fpu_norm_div_sqrt.sv Line: 81
+Warning (10230): Verilog HDL assignment warning at fpu_norm_div_sqrt.sv(214): truncated value with size 25 to match size of target (24) File: D:/e5rv32/fpu_norm_div_sqrt.sv Line: 214
+Info (12128): Elaborating entity "fpu_itof" for hierarchy "fpu:inst7|fpu_itof:int2fp" File: D:/e5rv32/fpu.sv Line: 267
+Info (12128): Elaborating entity "fpu_ftoi" for hierarchy "fpu:inst7|fpu_ftoi:fp2int" File: D:/e5rv32/fpu.sv Line: 296
+Warning (10764): Verilog HDL warning at fpu_ftoi.sv(90): converting signed shift amount to unsigned File: D:/e5rv32/fpu_ftoi.sv Line: 90
+Info (12128): Elaborating entity "fpu_norm" for hierarchy "fpu:inst7|fpu_norm:normalizer" File: D:/e5rv32/fpu.sv Line: 371
+Warning (10230): Verilog HDL assignment warning at fpu_norm.sv(120): truncated value with size 32 to match size of target (11) File: D:/e5rv32/fpu_norm.sv Line: 120
+Warning (10764): Verilog HDL warning at fpu_norm.sv(126): converting signed shift amount to unsigned File: D:/e5rv32/fpu_norm.sv Line: 126
+Warning (10764): Verilog HDL warning at fpu_norm.sv(136): converting signed shift amount to unsigned File: D:/e5rv32/fpu_norm.sv Line: 136
+Warning (10230): Verilog HDL assignment warning at fpu_norm.sv(140): truncated value with size 32 to match size of target (10) File: D:/e5rv32/fpu_norm.sv Line: 140
+Warning (10230): Verilog HDL assignment warning at fpu_norm.sv(205): truncated value with size 25 to match size of target (24) File: D:/e5rv32/fpu_norm.sv Line: 205
+Info (12128): Elaborating entity "fpu_ff" for hierarchy "fpu:inst7|fpu_norm:normalizer|fpu_ff:LOD" File: D:/e5rv32/fpu_norm.sv Line: 110
+Warning (10230): Verilog HDL assignment warning at fpu_ff.sv(58): truncated value with size 32 to match size of target (6) File: D:/e5rv32/fpu_ff.sv Line: 58
+Info (12128): Elaborating entity "fpu_exc" for hierarchy "fpu:inst7|fpu_exc:except" File: D:/e5rv32/fpu.sv Line: 423
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:inst28"
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "r32x32:inst20|rf" is uninferred due to asynchronous read logic File: D:/e5rv32/r32x32.sv Line: 8
+    Info (276007): RAM logic "r32x32:inst26|rf" is uninferred due to asynchronous read logic File: D:/e5rv32/r32x32.sv Line: 8
 Info (278001): Inferred 8 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:inst3|Mult0" File: D:/rv32/alu.sv Line: 38
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:inst3|Mult2" File: D:/rv32/alu.sv Line: 40
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:inst3|Mult1" File: D:/rv32/alu.sv Line: 39
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Mod0" File: D:/rv32/alu.sv Line: 53
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Div1" File: D:/rv32/alu.sv Line: 52
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Div0" File: D:/rv32/alu.sv Line: 51
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Mod1" File: D:/rv32/alu.sv Line: 54
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "fpu:inst7|fpu_mult:multiplier|Mult0" File: D:/rv32/fpu_mult.sv Line: 90
-Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_mult:Mult0" File: D:/rv32/alu.sv Line: 38
-Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult0" with the following parameter: File: D:/rv32/alu.sv Line: 38
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:inst3|Mult0" File: D:/e5rv32/alu.sv Line: 38
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:inst3|Mult2" File: D:/e5rv32/alu.sv Line: 40
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:inst3|Mult1" File: D:/e5rv32/alu.sv Line: 39
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Mod0" File: D:/e5rv32/alu.sv Line: 53
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Div1" File: D:/e5rv32/alu.sv Line: 52
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Div0" File: D:/e5rv32/alu.sv Line: 51
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:inst3|Mod1" File: D:/e5rv32/alu.sv Line: 54
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "fpu:inst7|fpu_mult:multiplier|Mult0" File: D:/e5rv32/fpu_mult.sv Line: 90
+Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_mult:Mult0" File: D:/e5rv32/alu.sv Line: 38
+Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult0" with the following parameter: File: D:/e5rv32/alu.sv Line: 38
     Info (12134): Parameter "LPM_WIDTHA" = "32"
     Info (12134): Parameter "LPM_WIDTHB" = "32"
     Info (12134): Parameter "LPM_WIDTHP" = "64"
@@ -1289,9 +1531,9 @@ Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult0" with the foll
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_u9t.tdf
-    Info (12023): Found entity 1: mult_u9t File: D:/rv32/db/mult_u9t.tdf Line: 31
-Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_mult:Mult2" File: D:/rv32/alu.sv Line: 40
-Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult2" with the following parameter: File: D:/rv32/alu.sv Line: 40
+    Info (12023): Found entity 1: mult_u9t File: D:/e5rv32/db/mult_u9t.tdf Line: 31
+Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_mult:Mult2" File: D:/e5rv32/alu.sv Line: 40
+Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult2" with the following parameter: File: D:/e5rv32/alu.sv Line: 40
     Info (12134): Parameter "LPM_WIDTHA" = "64"
     Info (12134): Parameter "LPM_WIDTHB" = "32"
     Info (12134): Parameter "LPM_WIDTHP" = "96"
@@ -1302,9 +1544,9 @@ Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult2" with the foll
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_bht.tdf
-    Info (12023): Found entity 1: mult_bht File: D:/rv32/db/mult_bht.tdf Line: 31
-Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_mult:Mult1" File: D:/rv32/alu.sv Line: 39
-Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult1" with the following parameter: File: D:/rv32/alu.sv Line: 39
+    Info (12023): Found entity 1: mult_bht File: D:/e5rv32/db/mult_bht.tdf Line: 31
+Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_mult:Mult1" File: D:/e5rv32/alu.sv Line: 39
+Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult1" with the following parameter: File: D:/e5rv32/alu.sv Line: 39
     Info (12134): Parameter "LPM_WIDTHA" = "32"
     Info (12134): Parameter "LPM_WIDTHB" = "32"
     Info (12134): Parameter "LPM_WIDTHP" = "64"
@@ -1315,55 +1557,55 @@ Info (12133): Instantiated megafunction "alu:inst3|lpm_mult:Mult1" with the foll
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_1ht.tdf
-    Info (12023): Found entity 1: mult_1ht File: D:/rv32/db/mult_1ht.tdf Line: 31
-Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Mod0" File: D:/rv32/alu.sv Line: 53
-Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Mod0" with the following parameter: File: D:/rv32/alu.sv Line: 53
+    Info (12023): Found entity 1: mult_1ht File: D:/e5rv32/db/mult_1ht.tdf Line: 31
+Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Mod0" File: D:/e5rv32/alu.sv Line: 53
+Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Mod0" with the following parameter: File: D:/e5rv32/alu.sv Line: 53
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_6uo.tdf
-    Info (12023): Found entity 1: lpm_divide_6uo File: D:/rv32/db/lpm_divide_6uo.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_6uo File: D:/e5rv32/db/lpm_divide_6uo.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
-    Info (12023): Found entity 1: abs_divider_4dg File: D:/rv32/db/abs_divider_4dg.tdf Line: 27
+    Info (12023): Found entity 1: abs_divider_4dg File: D:/e5rv32/db/abs_divider_4dg.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0ef.tdf
-    Info (12023): Found entity 1: alt_u_div_0ef File: D:/rv32/db/alt_u_div_0ef.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_0ef File: D:/e5rv32/db/alt_u_div_0ef.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
-    Info (12023): Found entity 1: add_sub_1tc File: D:/rv32/db/add_sub_1tc.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_1tc File: D:/e5rv32/db/add_sub_1tc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
-    Info (12023): Found entity 1: add_sub_2tc File: D:/rv32/db/add_sub_2tc.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_2tc File: D:/e5rv32/db/add_sub_2tc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_c4a.tdf
-    Info (12023): Found entity 1: lpm_abs_c4a File: D:/rv32/db/lpm_abs_c4a.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Div1" File: D:/rv32/alu.sv Line: 52
-Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Div1" with the following parameter: File: D:/rv32/alu.sv Line: 52
+    Info (12023): Found entity 1: lpm_abs_c4a File: D:/e5rv32/db/lpm_abs_c4a.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Div1" File: D:/e5rv32/alu.sv Line: 52
+Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Div1" with the following parameter: File: D:/e5rv32/alu.sv Line: 52
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bom.tdf
-    Info (12023): Found entity 1: lpm_divide_bom File: D:/rv32/db/lpm_divide_bom.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_bom File: D:/e5rv32/db/lpm_divide_bom.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9nh File: D:/rv32/db/sign_div_unsign_9nh.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Div0" File: D:/rv32/alu.sv Line: 51
-Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Div0" with the following parameter: File: D:/rv32/alu.sv Line: 51
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: D:/e5rv32/db/sign_div_unsign_9nh.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Div0" File: D:/e5rv32/alu.sv Line: 51
+Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Div0" with the following parameter: File: D:/e5rv32/alu.sv Line: 51
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_36p.tdf
-    Info (12023): Found entity 1: lpm_divide_36p File: D:/rv32/db/lpm_divide_36p.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Mod1" File: D:/rv32/alu.sv Line: 54
-Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Mod1" with the following parameter: File: D:/rv32/alu.sv Line: 54
+    Info (12023): Found entity 1: lpm_divide_36p File: D:/e5rv32/db/lpm_divide_36p.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "alu:inst3|lpm_divide:Mod1" File: D:/e5rv32/alu.sv Line: 54
+Info (12133): Instantiated megafunction "alu:inst3|lpm_divide:Mod1" with the following parameter: File: D:/e5rv32/alu.sv Line: 54
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_egm.tdf
-    Info (12023): Found entity 1: lpm_divide_egm File: D:/rv32/db/lpm_divide_egm.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0" File: D:/rv32/fpu_mult.sv Line: 90
-Info (12133): Instantiated megafunction "fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0" with the following parameter: File: D:/rv32/fpu_mult.sv Line: 90
+    Info (12023): Found entity 1: lpm_divide_egm File: D:/e5rv32/db/lpm_divide_egm.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0" File: D:/e5rv32/fpu_mult.sv Line: 90
+Info (12133): Instantiated megafunction "fpu:inst7|fpu_mult:multiplier|lpm_mult:Mult0" with the following parameter: File: D:/e5rv32/fpu_mult.sv Line: 90
     Info (12134): Parameter "LPM_WIDTHA" = "24"
     Info (12134): Parameter "LPM_WIDTHB" = "24"
     Info (12134): Parameter "LPM_WIDTHP" = "48"
@@ -1374,38 +1616,39 @@ Info (12133): Instantiated megafunction "fpu:inst7|fpu_mult:multiplier|lpm_mult:
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_5ht.tdf
-    Info (12023): Found entity 1: mult_5ht File: D:/rv32/db/mult_5ht.tdf Line: 31
+    Info (12023): Found entity 1: mult_5ht File: D:/e5rv32/db/mult_5ht.tdf Line: 31
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following DSP element node(s):
-        Warning (14320): Synthesized away node "alu:inst3|lpm_mult:Mult2|mult_bht:auto_generated|mac_mult15" File: D:/rv32/db/mult_bht.tdf Line: 68
-        Warning (14320): Synthesized away node "alu:inst3|lpm_mult:Mult2|mult_bht:auto_generated|mac_out16" File: D:/rv32/db/mult_bht.tdf Line: 128
+        Warning (14320): Synthesized away node "alu:inst3|lpm_mult:Mult2|mult_bht:auto_generated|mac_mult15" File: D:/e5rv32/db/mult_bht.tdf Line: 68
+        Warning (14320): Synthesized away node "alu:inst3|lpm_mult:Mult2|mult_bht:auto_generated|mac_out16" File: D:/e5rv32/db/mult_bht.tdf Line: 128
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13014): Ignored 1080 buffer(s)
     Info (13016): Ignored 124 CARRY_SUM buffer(s)
     Info (13019): Ignored 956 SOFT buffer(s)
-Info (13000): Registers with preset signals will power-up high File: D:/rv32/ctrl_EM.sv Line: 7
+Info (13000): Registers with preset signals will power-up high File: D:/e5rv32/pipereg_FD.sv Line: 5
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "FPUOkE" is stuck at VCC
+    Warning (13410): Pin "zero" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file D:/rv32/output_files/top.map.smsg
+Info (144001): Generated suppressed messages file D:/e5rv32/output_files/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 11473 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 13911 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 263 output pins
-    Info (21061): Implemented 11107 logic cells
+    Info (21059): Implemented 314 output pins
+    Info (21061): Implemented 13494 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21062): Implemented 37 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4938 megabytes
-    Info: Processing ended: Mon Jun 17 15:30:18 2024
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
+    Info: Peak virtual memory: 4958 megabytes
+    Info: Processing ended: Thu Jun 27 00:30:18 2024
+    Info: Elapsed time: 00:00:45
+    Info: Total CPU time (on all processors): 00:00:40
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/rv32/output_files/top.map.smsg.
+The suppressed messages can be found in D:/e5rv32/output_files/top.map.smsg.
 
 

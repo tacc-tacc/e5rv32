@@ -8,8 +8,8 @@ module pipereg_DE(input clk, reset, clear,
 					 
 	reg limpiando;
 
-    always @(negedge clk) begin
-        if (~reset | clear) begin
+    always_ff @(negedge clk, negedge reset) begin
+        if (~reset) begin
             RD1E <= 0;
             RD2E <= 0;
             Rs1E <= 0;
@@ -19,6 +19,16 @@ module pipereg_DE(input clk, reset, clear,
             PCPlus4E <= 0;
             limpiando = 1;
         end
+		  else if (clear) begin
+            RD1E <= 0;
+            RD2E <= 0;
+            Rs1E <= 0;
+            Rs2E <= 0;
+            RdE <= 0;
+            ImmExtE <= 0;
+            PCPlus4E <= 0;
+            limpiando = 1;		  
+		  end
 		  else if (limpiando)
 				limpiando = 0;
         else begin
